@@ -139,17 +139,9 @@ button {
     align-items: center;
 }
 
-.logo-text {
-    font-family: var(--font-serif);
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.logo-subtext {
-    font-size: 0.6rem;
-    letter-spacing: 3px;
-    color: var(--color-accent);
+.logo-img {
+    height: 60px;
+    width: auto;
 }
 
 .desktop-nav {
@@ -238,57 +230,12 @@ button {
     padding: 2rem;
 }
 
-.abstract-graphic {
+.hero-abstract-img {
     width: 100%;
     max-width: 450px;
-    aspect-ratio: 1 / 1.5;
-    background-color: var(--color-bg-dark);
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    height: auto;
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.15));
 }
-
-.sun {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: var(--color-accent);
-    position: absolute;
-    top: 15%;
-    right: 15%;
-}
-
-.waves {
-    position: absolute;
-    bottom: 30%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.wave {
-    height: 1px;
-    background-color: var(--color-accent);
-    width: 80%;
-}
-.wave:nth-child(2) { width: 60%; }
-.wave:nth-child(3) { width: 40%; }
-
-.established {
-    position: absolute;
-    bottom: 40px;
-    right: 30px;
-    color: var(--color-accent);
-    font-family: var(--font-serif);
-    text-align: right;
-}
-
-.established span { display: block; font-size: 1.2rem;}
-.established .year { font-size: 4rem; line-height: 1; }
 
 /* ==========================================================================
    About Us Section
@@ -319,13 +266,12 @@ button {
     margin-bottom: 2rem;
 }
 
-.abstract-boat-graphic {
+.about-boat-img {
     width: 100%;
-    height: 250px;
-    background-color: var(--color-bg-dark);
+    max-width: 500px;
+    height: auto;
     margin-top: 2rem;
-    position: relative;
-    clip-path: polygon(0 40%, 100% 40%, 80% 100%, 20% 100%);
+    display: block;
 }
 
 .about-right p {
@@ -623,6 +569,12 @@ button {
 .dot-round { background-color: var(--color-accent); }
 .dot-seasonal { background-color: var(--color-bg-dark); }
 .dot-hotel { background-color: var(--color-text-dark); }
+
+.locations-map-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .branches-grid {
     display: grid;
