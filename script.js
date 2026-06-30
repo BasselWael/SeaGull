@@ -89,8 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Menu Tab Switching (Visual Only for Demo) ---
+    // --- Menu Tab Switching ---
     const menuButtons = document.querySelectorAll('.menu-nav button');
+    const menuTitleSpan = document.querySelector('.menu-header .section-title span');
     
     menuButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -99,7 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add active to clicked
             btn.classList.add('active');
             
-            // For a full implementation, this would fetch/render different menu items
+            // Update the menu title with the location name
+            if (menuTitleSpan) {
+                // Title Case the location name (e.g. "NEW CAIRO" -> "New Cairo")
+                const locationName = btn.textContent.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                menuTitleSpan.textContent = locationName;
+            }
         });
     });
 
