@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Menu Tab Switching ---
-    const menuButtons = document.querySelectorAll('.menu-nav button');
+    const menuButtons = document.querySelectorAll('.map-pin');
     const menuTitleSpan = document.querySelector('.menu-header .section-title span');
     
     menuButtons.forEach(btn => {
@@ -102,8 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Update the menu title with the location name
             if (menuTitleSpan) {
-                // Title Case the location name (e.g. "NEW CAIRO" -> "New Cairo")
-                const locationName = btn.textContent.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                // Title Case the location name (e.g. "NEW CAIRO" -> "New Cairo") and strip bullet
+                const locationText = btn.textContent.replace('•', '').trim().toLowerCase();
+                const locationName = locationText.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
                 menuTitleSpan.textContent = locationName;
             }
         });
