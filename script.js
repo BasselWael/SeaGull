@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.getElementById('closeModalBtn');
     const resForm = document.getElementById('resForm');
 
+
     // Open Modal
     openBtns.forEach(btn => {
         if (btn) {
@@ -149,4 +150,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Scroll Animations (Intersection Observer) ---
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if ('IntersectionObserver' in window && !prefersReducedMotion) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            // Unobserve once revealed (one-way animation)
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+      document.querySelectorAll('.reveal, .stagger').forEach(el => {
+        revealObserver.observe(el);
+      });
+    } else {
+      // Fallback: reveal everything immediately if reduced motion is preferred or observer isn't supported
+      document.querySelectorAll('.reveal, .stagger').forEach(el => {
+        el.classList.add('is-visible');
+      });
+    }
 });
