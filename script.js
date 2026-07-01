@@ -89,25 +89,64 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Menu Tab Switching ---
-    const menuButtons = document.querySelectorAll('.map-pin');
+        // --- Menu Tab Switching ---
+    const menuButtons = document.querySelectorAll('.menu-tab');
     const menuTitleSpan = document.querySelector('.menu-header .section-title span');
-    
+    const menuContents = document.querySelectorAll('.menu-content');
+
     menuButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active from all
+            // Remove active from all tabs
             menuButtons.forEach(b => b.classList.remove('active'));
             // Add active to clicked
             btn.classList.add('active');
-            
+
+            // Hide all menus
+            menuContents.forEach(menu => {
+                menu.style.display = 'none';
+                menu.classList.remove('active-menu');
+            });
+
+            // Show target menu
+            const targetId = 'menu-' + btn.getAttribute('data-target');
+            const targetMenu = document.getElementById(targetId);
+            if (targetMenu) {
+                targetMenu.style.display = 'block';
+                targetMenu.classList.add('active-menu');
+            }
+
             // Update the menu title with the location name
             if (menuTitleSpan) {
-                // Title Case the location name (e.g. "NEW CAIRO" -> "New Cairo") and strip bullet
                 const locationText = btn.textContent.replace('•', '').trim().toLowerCase();
                 const locationName = locationText.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
                 menuTitleSpan.textContent = locationName;
             }
         });
     });
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+    const locPins = document.querySelectorAll('.loc-pin');
+    const locCards = document.querySelectorAll('.loc-detail-card');
+
+    locPins.forEach(pin => {
+        pin.addEventListener('click', () => {
+            // Remove active from all pins
+            locPins.forEach(p => p.classList.remove('active'));
+            // Add active to clicked pin
+            pin.classList.add('active');
+
+            // Hide all cards
+            locCards.forEach(card => {
+                card.style.display = 'none';
+            });
+
+            // Show target card
+            const targetLoc = pin.getAttribute('data-loc');
+            const targetCard = document.getElementById('detail-' + targetLoc);
+            if (targetCard) {
+                targetCard.style.display = 'flex';
+            }
+        });
+    });
 });

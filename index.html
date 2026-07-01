@@ -200,24 +200,14 @@
 
         <!-- Menu Section -->
         <section class="menu-section" id="menu">
-            <div class="map-nav-container">
-                <div class="map-header">
-                    <p class="section-subtitle">Locations</p>
-                    <h2 class="section-title">An Egyptian Map</h2>
-                    <p class="map-desc">Tap a pin to explore the house.<br>07 houses across the country.</p>
-                </div>
-                
-                <div class="map-wrapper">
-                    <img src="assets/images/map.svg" alt="Map of Egypt" class="map-image">
-                    
-                    <button class="map-pin pin-elmax active">EL MAX</button>
-                    <button class="map-pin pin-marina">MARINA <span style="color: var(--color-accent); font-size: 1.2em; line-height: 0;">&bull;</span></button>
-                    <button class="map-pin pin-dokki">DOKKI</button>
-                    <button class="map-pin pin-newcairo">NEW CAIRO</button>
-                    <button class="map-pin pin-gleem">GLEEM</button>
-                    <button class="map-pin pin-madinaty">MADINATY</button>
-                    <button class="map-pin pin-sheikhzayed">SHEIKH ZAYED</button>
-                </div>
+                        <div class="menu-tabs">
+                <button class="menu-tab active" data-target="elmax">EL MAX</button>
+                <button class="menu-tab" data-target="marina">MARINA <span style="color: var(--color-accent);">&bull;</span></button>
+                <button class="menu-tab" data-target="dokki">DOKKI</button>
+                <button class="menu-tab" data-target="newcairo">NEW CAIRO</button>
+                <button class="menu-tab" data-target="gleem">GLEEM</button>
+                <button class="menu-tab" data-target="madinaty">MADINATY</button>
+                <button class="menu-tab" data-target="sheikhzayed">SHEIKH ZAYED</button>
             </div>
             
             <div class="menu-header">
@@ -225,465 +215,3266 @@
                 <h2 class="section-title">Menu · <span class="italic-serif text-accent">El Max</span></h2>
             </div>
 
-            <div class="menu-grid">
-                <div class="menu-category">
-                    <h3 class="category-title">Soups <span class="arabic">الشوربة</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seafood Soup</span>
-                                <span class="item-name-ar">شوربة سي فود</span>
-                            </div>
-                            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Shrimp Soup</span>
-                                <span class="item-name-ar">شوربة جمبري</span>
-                            </div>
-                            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
-                        </li>
-                    </ul>
-                </div>
+            <div id="all-menus-container">
+<div class="menu-content active-menu" id="menu-elmax" >
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-                <div class="menu-category">
-                    <h3 class="category-title">Salads & Couvert <span class="arabic">السلطات والمقبلات</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Couvert (per person)</span>
-                                <span class="item-name-ar">كوفير للفرد</span>
-                            </div>
-                            <p class="item-desc">Our house selection of mezze-style salads.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seagull Salads</span>
-                                <span class="item-name-ar">سلطات سي جل</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">French Fries</span>
-                                <span class="item-name-ar">بطاطس محمرة</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+<div class="menu-content " id="menu-marina" style="display:none;">
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-                <div class="menu-category">
-                    <h3 class="category-title">Side Dishes <span class="arabic">أطباق جانبية</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Herring</span>
-                                <span class="item-name-ar">رنجة</span>
-                            </div>
-                            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Salt Fish (Feseekh)</span>
-                                <span class="item-name-ar">فسيخ</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Sardines</span>
-                                <span class="item-name-ar">سردين</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Fried Baby Fish</span>
-                                <span class="item-name-ar">بساريا مقلية</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seafood Kofta</span>
-                                <span class="item-name-ar">كفتة سي فود</span>
-                            </div>
-                            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Shrimp Molokhia</span>
-                                <span class="item-name-ar">ملوخية بالجمبري</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Stuffed Calamari</span>
-                                <span class="item-name-ar">كاليماري محشي</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Calamari (per kilo)</span>
-                                <span class="item-name-ar">كاليماري (بالكيلو)</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Squid Casserole</span>
-                                <span class="item-name-ar">طاجن سبيط</span>
-                            </div>
-                            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Squid, Fried or Grilled</span>
-                                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Squid Fajita</span>
-                                <span class="item-name-ar">فاهيتا سبيط</span>
-                            </div>
-                            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seafood Casserole</span>
-                                <span class="item-name-ar">طاجن سي فود</span>
-                            </div>
-                            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Shrimp Casserole</span>
-                                <span class="item-name-ar">طاجن جمبري</span>
-                            </div>
-                            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Octopus</span>
-                                <span class="item-name-ar">أخطبوط</span>
-                            </div>
-                            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Squid Eggs</span>
-                                <span class="item-name-ar">بيض سبيط</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Grilled Chicken Meal</span>
-                                <span class="item-name-ar">وجبة دجاج مشوي</span>
-                            </div>
-                            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
-                        </li>
-                    </ul>
-                </div>
+<div class="menu-content " id="menu-dokki" style="display:none;">
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-                <div class="menu-category">
-                    <h3 class="category-title">Fresh Fish (Market Selection) <span class="arabic">أسماك طازجة (حسب السوق)</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Grey Mullet</span>
-                                <span class="item-name-ar">بوري</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Keeled Mullet</span>
-                                <span class="item-name-ar">سهيلة</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Sea Bream</span>
-                                <span class="item-name-ar">دنيس</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Sea Bass</span>
-                                <span class="item-name-ar">قاروص</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Snapper</span>
-                                <span class="item-name-ar">مرجان</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Blue Fish</span>
-                                <span class="item-name-ar">مياس</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Red Mullet</span>
-                                <span class="item-name-ar">بربون</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Sole Fish</span>
-                                <span class="item-name-ar">موسى</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Grouper</span>
-                                <span class="item-name-ar">وقار</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Grouper Steak</span>
-                                <span class="item-name-ar">ترانشات وقار</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Salmon</span>
-                                <span class="item-name-ar">سالمون</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Lout Fish Steak</span>
-                                <span class="item-name-ar">ترانشات لوت</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Eel Fish</span>
-                                <span class="item-name-ar">ثعبان بحر</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Fresh Roe (Botarga)</span>
-                                <span class="item-name-ar">بطارخ طازجة</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Crab</span>
-                                <span class="item-name-ar">كابوريا</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Boneless Crab</span>
-                                <span class="item-name-ar">كابوريا مخلية</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Mussels</span>
-                                <span class="item-name-ar">بلح البحر</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Clams (Gondofli)</span>
-                                <span class="item-name-ar">جندوفلي</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Lobster Baladi</span>
-                                <span class="item-name-ar">استاكوزا بلدي</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+<div class="menu-content " id="menu-newcairo" style="display:none;">
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-                <div class="menu-category">
-                    <h3 class="category-title">Shrimp <span class="arabic">الجمبري</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Medium Shrimps</span>
-                                <span class="item-name-ar">جمبري وسط</span>
-                            </div>
-                            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Large Shrimps</span>
-                                <span class="item-name-ar">جمبري كبير</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Super Shrimps</span>
-                                <span class="item-name-ar">جمبري سوبر</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Jumbo Shrimps</span>
-                                <span class="item-name-ar">جمبري جامبو</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Kazzaz Shrimps</span>
-                                <span class="item-name-ar">جمبري قزاز</span>
-                            </div>
-                            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
-                        </li>
-                    </ul>
-                </div>
+<div class="menu-content " id="menu-gleem" style="display:none;">
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-                <div class="menu-category">
-                    <h3 class="category-title">Rice & Pasta <span class="arabic">الأرز والمكرونة</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seagull Rice</span>
-                                <span class="item-name-ar">أرز سي جل</span>
-                            </div>
-                            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Signature Shrimp Rice</span>
-                                <span class="item-name-ar">أرز بالجمبري</span>
-                            </div>
-                            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seafood Rice</span>
-                                <span class="item-name-ar">أرز سي فود</span>
-                            </div>
-                            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Sayadeya Rice</span>
-                                <span class="item-name-ar">أرز صيادية</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Plain Pasta</span>
-                                <span class="item-name-ar">مكرونة سادة</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Shrimp Pasta</span>
-                                <span class="item-name-ar">مكرونة بالجمبري</span>
-                            </div>
-                            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
-                        </li>
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Seafood Pasta</span>
-                                <span class="item-name-ar">مكرونة سي فود</span>
-                            </div>
-                            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
-                        </li>
-                    </ul>
-                </div>
+<div class="menu-content " id="menu-madinaty" style="display:none;">
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-                <div class="menu-category">
-                    <h3 class="category-title">Shisha <span class="arabic">الشيشة</span></h3>
-                    <ul class="menu-items two-col">
-                        <li>
-                            <div class="item-header">
-                                <span class="item-name">Fakher Shisha</span>
-                                <span class="item-name-ar">شيشة فاخر</span>
-                            </div>
-                            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
-                        </li>
-                    </ul>
-                </div>
+<div class="menu-content " id="menu-sheikhzayed" style="display:none;">
+<div class="menu-grid">
+<div class="menu-category">
+    <h3 class="category-title">Soups <span class="category-title-ar">الشوربة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Soup</span>
+                <span class="item-name-ar">شوربة سي فود</span>
+            </div>
+            <p class="item-desc">Shrimp and calamari in a creamy seafood broth.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Soup</span>
+                <span class="item-name-ar">شوربة جمبري</span>
+            </div>
+            <p class="item-desc">Peeled shrimp simmered in a red seafood broth.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Salads & Couvert <span class="category-title-ar">السلطات والمقبلات</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Couvert (per person)</span>
+                <span class="item-name-ar">كوفير للفرد</span>
+            </div>
+            <p class="item-desc">Our house selection of mezze-style salads.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Salads</span>
+                <span class="item-name-ar">سلطات سي جل</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">French Fries</span>
+                <span class="item-name-ar">بطاطس محمرة</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Side Dishes <span class="category-title-ar">أطباق جانبية</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Herring</span>
+                <span class="item-name-ar">رنجة</span>
+            </div>
+            <p class="item-desc">Smoked herring tossed with tahini, onions, and colourful peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salt Fish (Feseekh)</span>
+                <span class="item-name-ar">فسيخ</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sardines</span>
+                <span class="item-name-ar">سردين</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fried Baby Fish</span>
+                <span class="item-name-ar">بساريا مقلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Kofta</span>
+                <span class="item-name-ar">كفتة سي فود</span>
+            </div>
+            <p class="item-desc">Calamari and shrimp minced with onions, fresh herbs, and ground rice, fried or grilled.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Molokhia</span>
+                <span class="item-name-ar">ملوخية بالجمبري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Stuffed Calamari</span>
+                <span class="item-name-ar">كاليماري محشي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Calamari (per kilo)</span>
+                <span class="item-name-ar">كاليماري (بالكيلو)</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Casserole</span>
+                <span class="item-name-ar">طاجن سبيط</span>
+            </div>
+            <p class="item-desc">Calamari cooked in your choice of white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid, Fried or Grilled</span>
+                <span class="item-name-ar">سبيط مقلي أو مشوي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Fajita</span>
+                <span class="item-name-ar">فاهيتا سبيط</span>
+            </div>
+            <p class="item-desc">Tender calamari sautéed with onions, colourful peppers, and our signature spice blend.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Casserole</span>
+                <span class="item-name-ar">طاجن سي فود</span>
+            </div>
+            <p class="item-desc">A generous mix of calamari, shrimp, roe, and squid eggs with onions and peppers.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Casserole</span>
+                <span class="item-name-ar">طاجن جمبري</span>
+            </div>
+            <p class="item-desc">Fresh shrimp with onions, peppers, and creamy white sauce, served in a clay tagen.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Octopus</span>
+                <span class="item-name-ar">أخطبوط</span>
+            </div>
+            <p class="item-desc">Prepared in tagen, grilled, or fried.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Squid Eggs</span>
+                <span class="item-name-ar">بيض سبيط</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grilled Chicken Meal</span>
+                <span class="item-name-ar">وجبة دجاج مشوي</span>
+            </div>
+            <p class="item-desc">Half-chicken grilled, served with white rice and french fries.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Fresh Fish (Market Selection) <span class="category-title-ar">أسماك طازجة (حسب السوق)</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grey Mullet</span>
+                <span class="item-name-ar">بوري</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Keeled Mullet</span>
+                <span class="item-name-ar">سهيلة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bream</span>
+                <span class="item-name-ar">دنيس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sea Bass</span>
+                <span class="item-name-ar">قاروص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Snapper</span>
+                <span class="item-name-ar">مرجان</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Blue Fish</span>
+                <span class="item-name-ar">مياس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Red Mullet</span>
+                <span class="item-name-ar">بربون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sole Fish</span>
+                <span class="item-name-ar">موسى</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper</span>
+                <span class="item-name-ar">وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Grouper Steak</span>
+                <span class="item-name-ar">ترانشات وقار</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Salmon</span>
+                <span class="item-name-ar">سالمون</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lout Fish Steak</span>
+                <span class="item-name-ar">ترانشات لوت</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Eel Fish</span>
+                <span class="item-name-ar">ثعبان بحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fresh Roe (Botarga)</span>
+                <span class="item-name-ar">بطارخ طازجة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Crab</span>
+                <span class="item-name-ar">كابوريا</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Boneless Crab</span>
+                <span class="item-name-ar">كابوريا مخلية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Mussels</span>
+                <span class="item-name-ar">بلح البحر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Clams (Gondofli)</span>
+                <span class="item-name-ar">جندوفلي</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Lobster Baladi</span>
+                <span class="item-name-ar">استاكوزا بلدي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shrimp <span class="category-title-ar">الجمبري</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Medium Shrimps</span>
+                <span class="item-name-ar">جمبري وسط</span>
+            </div>
+            <p class="item-desc">Prepared your way. Ask about butterfly preparation.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Large Shrimps</span>
+                <span class="item-name-ar">جمبري كبير</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Super Shrimps</span>
+                <span class="item-name-ar">جمبري سوبر</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Jumbo Shrimps</span>
+                <span class="item-name-ar">جمبري جامبو</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Kazzaz Shrimps</span>
+                <span class="item-name-ar">جمبري قزاز</span>
+            </div>
+            <p class="item-desc">Available in Medium, Large, Super, and Jumbo.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Rice & Pasta <span class="category-title-ar">الأرز والمكرونة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seagull Rice</span>
+                <span class="item-name-ar">أرز سي جل</span>
+            </div>
+            <p class="item-desc">Sayadeya rice topped with a mix of the day's seafood.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Signature Shrimp Rice</span>
+                <span class="item-name-ar">أرز بالجمبري</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with fresh shrimp.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Rice</span>
+                <span class="item-name-ar">أرز سي فود</span>
+            </div>
+            <p class="item-desc">Sayadeya rice with shrimp and calamari.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Sayadeya Rice</span>
+                <span class="item-name-ar">أرز صيادية</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Plain Pasta</span>
+                <span class="item-name-ar">مكرونة سادة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Shrimp Pasta</span>
+                <span class="item-name-ar">مكرونة بالجمبري</span>
+            </div>
+            <p class="item-desc">With fresh shrimp, in white or red sauce.</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Seafood Pasta</span>
+                <span class="item-name-ar">مكرونة سي فود</span>
+            </div>
+            <p class="item-desc">Al dente pasta with shrimp and calamari, in spicy red or white sauce.</p>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Shisha <span class="category-title-ar">الشيشة</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Fakher Shisha</span>
+                <span class="item-name-ar">شيشة فاخر</span>
+            </div>
+            <p class="item-desc">Apple, Peach, Grape, Watermelon, Gum, Mint, Blueberry, Orange, Guava, Cola, Mix</p>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Candy Drops</span>
+                <span class="item-name-ar">كاندي دروبس</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Strawberry Cream</span>
+                <span class="item-name-ar">فراولة بالكريمة</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Gum Mint</span>
+                <span class="item-name-ar">لبان نعناع</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Cola Lemon</span>
+                <span class="item-name-ar">كولا ليمون</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="menu-category">
+    <h3 class="category-title">Maassel <span class="category-title-ar">المعسل</span></h3>
+    <ul class="menu-items">
+        <li>
+            <div class="item-header">
+                <span class="item-name">Saloum</span>
+                <span class="item-name-ar">معسل سلوم</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Qas</span>
+                <span class="item-name-ar">معسل قص</span>
+            </div>
+        </li>
+        <li>
+            <div class="item-header">
+                <span class="item-name">Natural Li</span>
+                <span class="item-name-ar">لي طبي</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
 
-            
-            <p class="menu-note text-center mt-large">
-                Menu selections vary with the season and the morning's catch. Butterfly, tagen, and potato preparations available on request. Ask our staff about the day's sea-market selection.
-            </p>
-            <div class="quote text-center">
-                <span class="quote-mark">“</span>
-                <p class="italic-serif text-accent">From the sea to your plate and nothing in between.</p>
-                <p class="quote-author">The house philosophy, since '85</p>
+</div>
+            <div class="menu-disclaimer">
+                Menu selections vary with the season and the morning's catch. <span class="text-accent">Butterfly, tagen, and potato preparations available on request.</span> Ask our staff about the day's sea-market selection.
+            </div>
+
+            <div class="menu-quote">
+                <div class="quote-icon">“</div>
+                <h3>“From the sea to your plate and nothing in between.”</h3>
+                <p>The house philosophy, since '85</p>
             </div>
         </section>
 
         <!-- Locations Section -->
+        
         <section class="locations-section" id="locations">
-            <p class="section-subtitle">LOCATIONS</p>
-            <h2 class="section-title">Seven houses. <br> <span class="italic-serif text-accent">One kitchen.</span></h2>
+            <div class="locations-section-header">
+                <p class="section-subtitle-locations">- Locations</p>
+                <h2 class="section-title-locations">Seven houses. <br> <span class="italic-serif text-accent">One kitchen.</span></h2>
+            </div>
             
-            <div class="locations-map">
-                <div class="map-header">
-                    <h3>An Egyptian Map</h3>
-                    <p class="italic-serif">Tap a pin to explore the house.</p>
-                    <div class="map-legend">
-                        <span><span class="dot dot-round"></span> OPEN YEAR ROUND</span>
-                        <span><span class="dot dot-seasonal"></span> SEASONAL SUMMER</span>
-                        <span><span class="dot dot-hotel"></span> BOUTIQUE HOTEL</span>
+            <div class="locations-white-box">
+                <div class="loc-box-header">
+                    <div class="loc-box-title-area">
+                        <h3>An Egyptian Map</h3>
+                        <p><span class="italic-serif text-accent" style="font-size: 1.5em; margin-right: 0.5rem;">Tap</span> a pin to explore the house.</p>
+                        <p class="loc-box-count"><span class="italic-serif text-accent" style="font-size: 1.5em; margin-right: 0.5rem;">07</span> houses across the country</p>
+                    </div>
+                    <div class="loc-legend">
+                        <span><span class="legend-dot dot-round"></span> OPEN YEAR-ROUND</span>
+                        <span><span class="legend-dot dot-seasonal"></span> SEASONAL - SUMMER</span>
+                        <span><span class="legend-dot dot-hotel"></span> BOUTIQUE HOTEL</span>
                     </div>
                 </div>
-                <!-- Placeholder for map graphic -->
-                <div class="map-placeholder">
-                    <img src="assets/images/map.svg" alt="Seagull Locations Map" class="locations-map-img">
+
+                <div class="loc-box-body">
+                    <div class="loc-map-side">
+                        
+                        <!-- Custom Code-Generated Map -->
+                        <div class="custom-map-bg">
+                            <div class="map-sea">
+                                <span class="sea-label">THE MEDITERRANEAN</span>
+                                <svg class="fish-svg" style="left: 10%; top: 60%;" viewBox="0 0 100 30"><ellipse cx="50" cy="15" rx="40" ry="10" fill="rgba(0,0,0,0.05)"/><circle cx="95" cy="15" r="5" fill="rgba(0,0,0,0.05)"/></svg>
+                                <svg class="fish-svg" style="left: 70%; top: 30%; transform: scale(1.5);" viewBox="0 0 100 30"><ellipse cx="50" cy="15" rx="40" ry="10" fill="rgba(0,0,0,0.05)"/><circle cx="95" cy="15" r="5" fill="rgba(0,0,0,0.05)"/></svg>
+                            </div>
+                            <div class="map-land">
+                                <span class="land-label" style="left: 15%; top: 15%;">NORTH COAST<br><span style="font-size:0.8em">الساحل الشمالي</span></span>
+                                <span class="land-label" style="left: 35%; top: 20%;">ALEXANDRIA<br><span style="font-size:0.8em">الإسكندرية</span></span>
+                                <span class="land-label" style="left: 60%; top: 65%;">CAIRO<br><span style="font-size:0.8em">القاهرة</span></span>
+                                
+                                <svg class="nile-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <!-- Nile Delta Branches -->
+                                    <path d="M 50,70 Q 48,35 32,0" fill="none" stroke="#9bc4cb" stroke-width="0.8" />
+                                    <path d="M 50,70 Q 52,35 62,0" fill="none" stroke="#9bc4cb" stroke-width="0.8" />
+                                    <!-- Main River -->
+                                    <path d="M 50,100 L 50,70" fill="none" stroke="#9bc4cb" stroke-width="0.8" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Pins -->
+                        <div class="pin-wrapper" style="left: 15%; top: 20%;">
+                            <button class="loc-pin pin-marina active" data-loc="marina"></button>
+                            <span class="pin-label">Marina</span>
+                        </div>
+                        <div class="pin-wrapper" style="left: 30%; top: 25%;">
+                            <button class="loc-pin pin-elmax" data-loc="elmax"></button>
+                            <span class="pin-label">El Max</span>
+                        </div>
+                        <div class="pin-wrapper" style="left: 38%; top: 27%;">
+                            <button class="loc-pin " data-loc="gleem"></button>
+                            <span class="pin-label">Gleem</span>
+                        </div>
+                        <div class="pin-wrapper" style="left: 45%; top: 75%;">
+                            <button class="loc-pin " data-loc="sheikhzayed"></button>
+                            <span class="pin-label">Sheikh Zayed</span>
+                        </div>
+                        <div class="pin-wrapper" style="left: 52%; top: 68%;">
+                            <button class="loc-pin " data-loc="dokki"></button>
+                            <span class="pin-label">Dokki</span>
+                        </div>
+                        <div class="pin-wrapper" style="left: 62%; top: 72%;">
+                            <button class="loc-pin " data-loc="newcairo"></button>
+                            <span class="pin-label">New Cairo</span>
+                        </div>
+                        <div class="pin-wrapper" style="left: 70%; top: 67%;">
+                            <button class="loc-pin " data-loc="madinaty"></button>
+                            <span class="pin-label">Madinaty</span>
+                        </div>
+</div>
+                    <div class="loc-card-side">
+                        <div class="loc-detail-card" id="detail-elmax" style="display: none;">
+                            <p class="card-subtitle">- The Original · Since 1985</p>
+                            <h3 class="card-title">El Max</h3>
+                            <p class="card-city">Alexandria</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Al Meks, Dekhela, Alexandria</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 3 310 5957</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Daily · 12 PM - 1 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                        <div class="loc-detail-card" id="detail-marina">
+                            <p class="card-subtitle">- Seasonal · Summer Only</p>
+                            <h3 class="card-title">Marina</h3>
+                            <p class="card-city">North Coast · Marina El Alamein</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Marina El Alamein, Gate 2, North Coast</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 121 233 3311</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Summer Season · 1 PM - 1 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                        <div class="loc-detail-card" id="detail-dokki" style="display: none;">
+                            <p class="card-subtitle">- On the Nile</p>
+                            <h3 class="card-title">Dokki</h3>
+                            <p class="card-city">Cairo · Opposite Cairo Tower</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Nile Street, Ad Doqi, Giza</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 2 37494244</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Daily · 9 AM - 2 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                        <div class="loc-detail-card" id="detail-newcairo" style="display: none;">
+                            <p class="card-subtitle">- New Cairo · Tagamoa</p>
+                            <h3 class="card-title">New Cairo</h3>
+                            <p class="card-city">Cairo · East Side</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Tagamoa, New Cairo 1, Cairo</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 121 233 3311</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Sun-Wed: 12 PM - 1 AM · Thu-Fri until 2 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                        <div class="loc-detail-card" id="detail-gleem" style="display: none;">
+                            <p class="card-subtitle">- Alexandria Coast</p>
+                            <h3 class="card-title">Gleem</h3>
+                            <p class="card-city">Alexandria</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Gleem Bay, Alexandria</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 121 233 3311</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Daily · 12 PM - 2 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                        <div class="loc-detail-card" id="detail-madinaty" style="display: none;">
+                            <p class="card-subtitle">- Cairo Suburbs</p>
+                            <h3 class="card-title">Madinaty</h3>
+                            <p class="card-city">Cairo</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Madinaty Open Air Mall</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 121 233 3311</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Daily · 12 PM - 1 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                        <div class="loc-detail-card" id="detail-sheikhzayed" style="display: none;">
+                            <p class="card-subtitle">- West Cairo</p>
+                            <h3 class="card-title">Sheikh Zayed</h3>
+                            <p class="card-city">Giza</p>
+                            <table class="card-table">
+                                <tr>
+                                    <th>ADDRESS</th>
+                                    <td>Capital Business Park, Sheikh Zayed</td>
+                                </tr>
+                                <tr>
+                                    <th>PHONE</th>
+                                    <td>+20 121 233 3311</td>
+                                </tr>
+                                <tr>
+                                    <th>HOURS</th>
+                                    <td>Daily · 12 PM - 1 AM</td>
+                                </tr>
+                            </table>
+                            <div class="card-actions">
+                                <button class="btn-card-dir">📍 DIRECTIONS</button>
+                                <button class="btn-card-res">RESERVE HERE</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="branches-grid">
-                <!-- Branch 1 -->
-                <div class="branch-card">
-                    <p class="section-subtitle">The Original · Est. 1985</p>
-                    <h3 class="italic-serif text-accent">El Max</h3>
-                    <p class="branch-city">Alexandria</p>
-                    <div class="branch-details">
-                        <p><strong>Address</strong><br>Al Meks, Dekhela · Alexandria</p>
-                        <p><strong>Hours</strong><br>Daily · 12:00 PM - 1:00 AM</p>
-                        <p><strong>Reservations</strong><br>+20 3310 5957</p>
+        <!-- Marina Experience Section -->
+        <section class="marina-exp-section">
+            <div class="marina-exp-container">
+                <div class="marina-exp-header">
+                    <div class="marina-exp-header-content">
+                        <div class="marina-exp-subtitle">— The Marina Experience</div>
+                        <h2 class="marina-exp-title">A summer on the<br>Mediterranean.<br><span class="marina-exp-title-italic">By Seagull.</span></h2>
+                        <p class="marina-exp-desc">For three months each year, the Marina house reopens and with it, a tradition thirty years in the making. The restaurant that defined the North Coast dining table, paired now with Seagull's only property of its kind.</p>
                     </div>
-                    <a href="#" class="link-action">GET DIRECTIONS →</a>
                 </div>
-                <!-- Branch 2 -->
-                <div class="branch-card">
-                    <p class="section-subtitle">Seasonal · Summer Only</p>
-                    <h3 class="italic-serif text-accent">Marina</h3>
-                    <p class="branch-city">North Coast</p>
-                    <div class="branch-details">
-                        <p><strong>Address</strong><br>Marina El Alamein, Gate 2 · North Coast</p>
-                        <p><strong>Season</strong><br>Open 3 months each summer</p>
-                        <p><strong>Reservations</strong><br>+20 121 233 3311</p>
+                
+                <div class="marina-exp-grid">
+                    <!-- Card 1 -->
+                    <div class="marina-exp-card">
+                        <div class="marina-exp-card-subtitle">Seasonal · Summer Only</div>
+                        <h3 class="marina-exp-card-title">Seagull <span class="italic-serif text-accent">Marina</span></h3>
+                        <p class="marina-exp-card-desc">Our Marina house is where the coast comes to eat the day's catch laid out on ice, the charcoal already lit, the sunset doing the rest. Open three months each summer. Reservations essential during peak weeks.</p>
+                        <div class="marina-exp-card-divider"></div>
+                        <div class="marina-exp-card-contact">
+                            <span class="marina-exp-address">Marina El Alamein - Gate 2</span>
+                            <span class="marina-exp-phone">+20 121 233 3311</span>
+                        </div>
                     </div>
-                    <a href="#" class="link-action">GET DIRECTIONS →</a>
-                </div>
-                <!-- Add more branches as needed for demo -->
-                <div class="branch-card">
-                    <p class="section-subtitle">On the Nile</p>
-                    <h3 class="italic-serif text-accent">Dokki</h3>
-                    <p class="branch-city">Cairo · Opposite Cairo Tower</p>
-                    <div class="branch-details">
-                        <p><strong>Address</strong><br>Nile Street, Ad Doqi · Giza</p>
-                        <p><strong>Hours</strong><br>Daily · 9:00 AM - 2:00 AM</p>
-                        <p><strong>Reservations</strong><br>+20 237494244</p>
+
+                    <!-- Card 2 -->
+                    <div class="marina-exp-card">
+                        <div class="marina-exp-card-subtitle">Boutique Hotel</div>
+                        <h3 class="marina-exp-card-title">Seagull <span class="italic-serif text-accent">Boutique Hotel</span></h3>
+                        <p class="marina-exp-card-desc">Our only boutique property. Rooms and suites on the water, a Seagull kitchen steps from the lobby, and the Mediterranean at the door. For guests who want the whole summer not just dinner.</p>
+                        <div class="marina-exp-card-divider"></div>
+                        <div class="marina-exp-card-contact">
+                            <span class="marina-exp-address">Marina El Alamein - North Coast</span>
+                            <span class="marina-exp-phone">+20 121 233 3311</span>
+                        </div>
                     </div>
-                    <a href="#" class="link-action">GET DIRECTIONS →</a>
-                </div>
-                 <div class="branch-card">
-                    <p class="section-subtitle">New Cairo · Tagamoa</p>
-                    <h3 class="italic-serif text-accent">New Cairo</h3>
-                    <p class="branch-city">Cairo · East Side</p>
-                    <div class="branch-details">
-                        <p><strong>Address</strong><br>Tagamoa, New Cairo 1 · Cairo</p>
-                        <p><strong>Hours</strong><br>Sun-Wed: 12 PM - 1 AM · Thu-Fri until 2 AM</p>
-                        <p><strong>Reservations</strong><br>+20 121 233 3311</p>
-                    </div>
-                    <a href="#" class="link-action">GET DIRECTIONS →</a>
                 </div>
             </div>
         </section>
@@ -715,7 +3506,128 @@
                 </div>
             </div>
         </section>
+
+        <!-- Guest Reviews Section -->
+        <section class="reviews-section">
+            <div class="reviews-container">
+                <div class="reviews-header">
+                    <p class="section-subtitle-reviews">— Guest Reviews</p>
+                    <h2 class="reviews-title">Four decades.<br><span class="reviews-title-italic">Thousands of tables.</span></h2>
+                </div>
+            </div>
+            
+            <div class="reviews-carousel-wrapper">
+                <div class="reviews-carousel">
+                    <!-- Cards -->
+                    <div class="review-card">
+                        <div class="review-stars">★ ★ ★ ★ ★</div>
+                        <p class="review-quote">"Fresh catches, professional service, and a setting right on the water. A must-visit in Egypt."</p>
+                        <div class="review-author">
+                            <span class="author-name">Laila A.</span>
+                            <span class="author-source">El Max · Google Review</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★ ★ ★ ★ ★</div>
+                        <p class="review-quote">"From starters to mains everything fresh. Decor is gorgeous, staff calm and accommodating."</p>
+                        <div class="review-author">
+                            <span class="author-name">Ahmed K.</span>
+                            <span class="author-source">Marina · Google Review</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★ ★ ★ ★ ★</div>
+                        <p class="review-quote">"From starters to mains everything fresh. Decor is gorgeous, staff calm and accommodating."</p>
+                        <div class="review-author">
+                            <span class="author-name">Omar R.</span>
+                            <span class="author-source">Madinaty · Google Review</span>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★ ★ ★ ★ ★</div>
+                        <p class="review-quote">"The best seafood experience I've had in a long time. Everything was cooked to perfection."</p>
+                        <div class="review-author">
+                            <span class="author-name">Sara M.</span>
+                            <span class="author-source">Gleem · TripAdvisor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-footer">
+                <div class="reviews-divider"></div>
+                <div class="reviews-rating">4.5 <span class="rating-star">★</span></div>
+                <p class="reviews-average">Average across 18,000+ reviews · Google & TripAdvisor</p>
+            </div>
+        </section>
+
+        <!-- Featured In Section -->
+        <section class="featured-section">
+            <div class="featured-container">
+                <h2 class="featured-main-title">AS FEATURED IN</h2>
+                
+                <div class="featured-grid">
+                    <!-- Card 1 -->
+                    <div class="featured-card">
+                        <h3 class="featured-card-title">Cairo <span class="italic-serif text-accent">360</span></h3>
+                        <div class="featured-divider"></div>
+                        <p class="featured-quote">"Not to be missed" for lovers of all things fishy, with menus "beyond excellent."</p>
+                        <div class="featured-divider"></div>
+                        <a href="#" class="featured-link">READ THE REVIEW &rarr;</a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="featured-card">
+                        <h3 class="featured-card-title">Local Guide <span class="italic-serif text-accent">to Egypt</span></h3>
+                        <div class="featured-divider"></div>
+                        <p class="featured-quote">A family favourite since 1993 - Dokki branch is a docked boat across from the Cairo Tower.</p>
+                        <div class="featured-divider"></div>
+                        <a href="#" class="featured-link">READ THE FEATURE &rarr;</a>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="featured-card">
+                        <h3 class="featured-card-title">Wander<span class="italic-serif text-accent">log</span></h3>
+                        <div class="featured-divider"></div>
+                        <p class="featured-quote">Ranked among Cairo's fifty best seafood restaurants, celebrated for its fresh daily catch.</p>
+                        <div class="featured-divider"></div>
+                        <a href="#" class="featured-link">VIEW THE LIST &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         
+        <!-- Instagram Section -->
+        <section class="instagram-section">
+            <div class="instagram-header">
+                <p class="section-subtitle-insta">— On Instagram</p>
+                <h2 class="insta-title">@SeagullRestaurantEgy</h2>
+                <a href="#" class="insta-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Follow the latest catch &rarr;</a>
+            </div>
+            
+            <div class="insta-grid">
+                <div class="insta-post" style="background-color: #2b4b52;">
+                    <!-- Placeholder graphic -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M2 12c2.67 0 4-1.33 4-4s1.33-4 4-4 4 1.33 4 4 1.33 4 4 4"/></svg>
+                </div>
+                <div class="insta-post" style="background-color: #c99f55;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <div class="insta-post" style="background-color: #ebd1a9;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+                </div>
+                <div class="insta-post" style="background-color: #bf6f4a;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="insta-post" style="background-color: #1c4149;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="insta-post" style="background-color: #635f3d;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="faq-left">
@@ -729,7 +3641,7 @@
             </div>
             <div class="faq-right">
                 <div class="accordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item active">
                         <button class="accordion-header">Do you take walk-ins, or should I reserve? <span class="icon">+</span></button>
                         <div class="accordion-body">
                             <p>Walk-ins are always welcome, and on quiet weekdays you'll rarely wait. That said, our Nile-side Dokki branch, Marina, and peak weekend nights fill quickly — we strongly recommend reserving ahead for groups of four or more, or for any holiday, Eid, or Ramadan iftar.</p>
@@ -747,29 +3659,50 @@
                         <button class="accordion-header">Is Seagull family-friendly? <span class="icon">+</span></button>
                         <div class="accordion-body"><p>Absolutely. We welcome families and have dedicated menus and highchairs available.</p></div>
                     </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">What's the dress code? <span class="icon">+</span></button>
+                        <div class="accordion-body"><p>Our atmosphere is relaxed and welcoming. Smart casual is perfect for dinner, while daytime dining is strictly casual.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Are there vegetarian options? <span class="icon">+</span></button>
+                        <div class="accordion-body"><p>While we specialize in seafood, we offer a variety of vegetarian-friendly mezza, salads, and sides.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Are hours different during Ramadan? <span class="icon">+</span></button>
+                        <div class="accordion-body"><p>Yes, during Ramadan we open exclusively for Iftar and Sohour. Reservations are highly recommended.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Do you deliver? <span class="icon">+</span></button>
+                        <div class="accordion-body"><p>Yes, we offer delivery and takeaway across all our locations. You can order online or call us directly.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Can I host a private event? <span class="icon">+</span></button>
+                        <div class="accordion-body"><p>Absolutely. We host everything from intimate family gatherings to large corporate events and weddings. Please contact our events team.</p></div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <!-- CTA Section -->
+    <section class="footer-cta-section text-center">
+        <h2 class="footer-cta-title">Join us at <span class="italic-serif text-accent">the table.</span></h2>
+        <p class="footer-cta-desc">Reservations for lunch, dinner, and private events across all seven<br>houses. For larger groups or full-venue bookings, please call us directly.</p>
+        <div class="cta-buttons">
+            <button class="btn-dark" id="footerReserveBtn">BOOK A TABLE</button>
+            <button class="btn-outline-dark">PRIVATE EVENTS</button>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="main-footer">
-        <div class="footer-cta text-center">
-            <h2 class="section-title">Join us at <span class="italic-serif text-accent">the table.</span></h2>
-            <p>Reservations for lunch, dinner, and private events across all seven houses. For larger groups or full-venue bookings, please call us directly.</p>
-            <div class="cta-buttons">
-                <button class="btn-primary" id="footerReserveBtn">BOOK A TABLE</button>
-                <button class="btn-outline">PRIVATE EVENTS</button>
-            </div>
-        </div>
-        
         <div class="footer-bottom">
             <div class="footer-col">
                 <div class="logo">
-                    <img src="assets/images/logo.svg" alt="Seagull Restaurants Logo" class="logo-img">
+                    <img src="assets/images/logo-white.svg" alt="Seagull Restaurants Logo" class="logo-img">
                 </div>
-                <p class="footer-desc">Egypt's legacy seafood house. From the sea to your plate since 1985.</p>
+                <p class="footer-desc">Egypt's legacy seafood house. From the sea to your<br>plate since 1985.</p>
             </div>
             <div class="footer-links">
                 <div class="link-col">
@@ -778,18 +3711,27 @@
                     <a href="#">MARINA</a>
                     <a href="#">DOKKI</a>
                     <a href="#">NEW CAIRO</a>
+                    <a href="#">GLEEM</a>
+                    <a href="#">MADINATY</a>
+                    <a href="#">SHEIKH ZAYED</a>
                 </div>
                 <div class="link-col">
                     <h4>THE BRAND</h4>
                     <a href="#">ABOUT US</a>
                     <a href="#">OUR STORY</a>
                     <a href="#">MARINA EXPERIENCE</a>
+                    <a href="#">BOUTIQUE HOTEL</a>
+                    <a href="#">PRESS</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">PRIVATE EVENTS</a>
+                    <a href="#">CAREERS</a>
                 </div>
                 <div class="link-col">
                     <h4>FOLLOW</h4>
-                    <a href="#">FACEBOOK</a>
+                    <a href="#">FACE BOOK</a>
                     <a href="#">INSTAGRAM</a>
                     <a href="#">TRIP ADVISOR</a>
+                    <a href="#">HELLO@SEAGULL.EG</a>
                 </div>
             </div>
         </div>
