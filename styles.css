@@ -1582,37 +1582,37 @@ button {
 }
 
 .section-subtitle-reviews {
+    font-family: var(--font-sans);
     color: var(--color-accent);
-    text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.reviews-header {
+    margin-left: -1.5rem; /* Nudge left for visual alignment */
 }
 
 .reviews-title {
     font-family: var(--font-serif);
     font-size: 3rem;
     line-height: 1.1;
-    color: #ffffff;
+    color: var(--color-text-light);
     margin-bottom: 3rem;
+    font-weight: 600;
 }
 
 .reviews-title-italic {
     font-style: italic;
     color: var(--color-accent);
+    font-weight: 400;
 }
 
 .reviews-carousel-wrapper {
     width: 100%;
-    overflow-x: auto;
-    padding: 0 5%;
+    overflow: hidden;
     margin-bottom: 4rem;
-    scrollbar-width: none; /* Firefox */
-}
-
-.reviews-carousel-wrapper::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
 }
 
 .reviews-carousel {
@@ -1620,6 +1620,22 @@ button {
     gap: 1.5rem;
     width: max-content;
     padding-bottom: 1rem;
+    animation: marqueeScroll 35s linear infinite;
+}
+
+.reviews-carousel:hover {
+    animation-play-state: paused;
+}
+
+.marquee-group {
+    display: flex;
+    gap: 1.5rem;
+    flex-shrink: 0;
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 0.75rem)); }
 }
 
 .review-card {
