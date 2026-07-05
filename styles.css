@@ -1577,8 +1577,6 @@ button {
 
 .reviews-container {
     padding: 0 5%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .section-subtitle-reviews {
@@ -1591,7 +1589,7 @@ button {
 }
 
 .reviews-header {
-    margin-left: -1.5rem; /* Nudge left for visual alignment */
+    /* Removed negative margin */
 }
 
 .reviews-title {
