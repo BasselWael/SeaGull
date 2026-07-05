@@ -46,9 +46,45 @@
                     <a href="#story" class="btn-link">OUR STORY &longrightarrow;</a>
                 </div>
             </div>
-            <div class="hero-graphic">
-            <img src="assets/images/hero_graphic.svg" alt="Established 1985 Graphic" class="hero-abstract-img">
+            <div class="hero-visual">
+        <svg viewBox="0 0 400 520" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="tide" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1d3d42"/>
+              <stop offset="100%" stop-color="#0f2a2e"/>
+            </linearGradient>
+            <linearGradient id="brassG" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#d4a55a"/>
+              <stop offset="100%" stop-color="#b08744"/>
+            </linearGradient>
+          </defs>
+          <path d="M40 520 L40 200 Q40 40 200 40 Q360 40 360 200 L360 520 Z" fill="url(#tide)"/>
+          <circle cx="200" cy="180" r="70" fill="none" stroke="url(#brassG)" stroke-width="1"/>
+          <circle cx="200" cy="180" r="55" fill="url(#brassG)" opacity="0.15" class="sun-pulse"/>
+          <circle cx="200" cy="180" r="3" fill="#d4a55a"/>
+          <g stroke="#d4a55a" stroke-width="1" fill="none" opacity="0.7">
+            <path class="hero-wave-1" d="M60 320 Q130 305, 200 320 T340 320"/>
+            <path class="hero-wave-2" d="M60 345 Q130 330, 200 345 T340 345" opacity="0.7"/>
+            <path class="hero-wave-3" d="M60 370 Q130 355, 200 370 T340 370" opacity="0.5"/>
+            <path class="hero-wave-4" d="M60 395 Q130 380, 200 395 T340 395" opacity="0.35"/>
+          </g>
+          <g fill="#d4a55a" opacity="0.9">
+            <path class="seagull-float-1" d="M120 130 Q135 118, 145 128 Q155 118, 170 130 L155 132 L145 135 L135 132 Z"/>
+            <path class="seagull-float-2" d="M230 100 Q240 92, 247 99 Q254 92, 264 100 L254 102 L247 104 L240 102 Z" opacity="0.7"/>
+          </g>
+          <text x="200" y="480" text-anchor="middle" font-family="Fraunces, serif"
+                font-size="60" font-style="italic" fill="#d4a55a" opacity="0.9"
+                font-weight="300">S</text>
+        </svg>
+
+        <div class="hero-meta">
+          <div class="est">
+            <span class="en">established</span>
+            
+          </div>
+          <div class="year">1985</div>
         </div>
+      </div>
         </section>
 
         <!-- About Us Section -->
@@ -3487,19 +3523,19 @@
             </div>
             <div class="delivery-grid stagger">
                 <div class="delivery-card">
-                    <div class="delivery-icon">🛵</div>
+                    <div class="delivery-icon" style="font-size: 24px; display: flex; align-items: center; justify-content: center;">🛵</div>
                     <h3>Talabat</h3>
                     <p>Our full menu, delivered across Cairo and Alexandria via Talabat.</p>
                     <button class="btn-primary btn-small">ORDER ON TALABAT</button>
                 </div>
                 <div class="delivery-card">
-                    <div class="delivery-icon">💬</div>
+                    <div class="delivery-icon" style="font-size: 24px; display: flex; align-items: center; justify-content: center;">💬</div>
                     <h3>WhatsApp</h3>
                     <p>Order directly from the house. Fast, personal, and straight to the kitchen.</p>
                     <button class="btn-success btn-small">CHAT ON WHATSAPP</button>
                 </div>
                 <div class="delivery-card">
-                    <div class="delivery-icon">📞</div>
+                    <div class="delivery-icon" style="font-size: 24px; display: flex; align-items: center; justify-content: center;">📞</div>
                     <h3>Call Direct</h3>
                     <p>Speak to your closest branch and place your order the classic way.</p>
                     <button class="btn-dark btn-small">012 1233 3311</button>
