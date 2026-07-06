@@ -2,6 +2,21 @@
    CSS Variables & Base Setup
    ========================================================================== */
 :root {
+    --ink: #0f2a2e;
+    --ink-soft: #1d3d42;
+    --cream: #f4ece0;
+    --cream-deep: #ece1cf;
+    --brass: #b08744;
+    --brass-light: #d4a55a;
+    --coral: #c45a3a;
+    --foam: #e8e0ce;
+    --shadow: rgba(15, 42, 46, 0.08);
+    
+    --f-display: "Fraunces", "Times New Roman", serif;
+    --f-body: "Manrope", -apple-system, sans-serif;
+    --f-ar-display: "Amiri", serif;
+    --f-ar-body: "Noto Kufi Arabic", sans-serif;
+
     --color-bg-dark: #17353A; /* Matches PDF dark teal */
     --color-bg-light: #F2EADE; /* Warmer Cream */
     --color-bg-alt: #F2EADE; /* Also update alt to match if not specifically different */
@@ -459,7 +474,7 @@ button {
 
 .timeline-image {
     width: 85%;
-    padding-top: 93.5%; /* Keeps the same ~110% aspect ratio relative to the 85% width */
+    padding-top: 65%; /* Adjusted aspect ratio */
     background-size: cover;
     background-position: center;
     margin-bottom: 1.5rem;
@@ -1281,6 +1296,9 @@ button {
 }
 
 .close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -1520,6 +1538,12 @@ button {
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.marina-exp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .marina-exp-card-subtitle {
@@ -2102,3 +2126,134 @@ button {
   .menu-featured-grid { grid-template-columns: 1fr; gap: 32px; }
   .menu-featured { padding: 40px 28px; }
 }
+section { scroll-margin-top: 120px; }
+
+/* === HERO META FIX === */
+.hero-visual {
+  position: relative;
+}
+.hero-meta {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  text-align: right;
+  z-index: 3;
+}
+html[dir="rtl"] .hero-meta {
+  right: auto; left: 32px; text-align: left;
+}
+.hero-meta .est {
+  font-family: var(--f-display);
+  font-size: 14px;
+  color: var(--brass-light);
+  margin-bottom: 4px;
+  font-style: normal;
+}
+html[lang="ar"] .hero-meta .est {
+  font-family: var(--f-ar-display);
+  font-style: normal;
+}
+.hero-meta .year {
+  font-family: var(--f-display);
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: var(--brass-light);
+  line-height: 1;
+}
+@media (max-width: 992px) {
+  .hero-meta { position: static; text-align: left; margin-top: 30px; }
+  html[dir="rtl"] .hero-meta { text-align: right; }
+}
+
+/* === BILINGUAL LOGIC === */
+html[lang="en"] .ar, html[lang="en"] .ar-block { display: none !important; }
+html[lang="ar"] .en, html[lang="ar"] .en-block { display: none !important; }
+.ar-block, .en-block { display: block; }
+html[lang="ar"] body { font-family: var(--f-ar-body); direction: rtl; }
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 { font-family: var(--f-ar-display); }
+  /* ─── INSTAGRAM ───────────────────────────────── */
+  .instagram-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  .instagram-handle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    color: var(--brass);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.25s;
+  }
+  .instagram-handle:hover { color: var(--ink); }
+  .instagram-handle svg { width: 20px; height: 20px; }
+
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+  }
+  .instagram-tile {
+    aspect-ratio: 1;
+    background: var(--ink);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s;
+  }
+  .instagram-tile:hover { transform: scale(1.02); z-index: 2; }
+  .instagram-tile-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+  }
+  .instagram-tile-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 42, 46, 0.75);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    color: var(--cream);
+  }
+  .instagram-tile:hover .instagram-tile-overlay { opacity: 1; }
+  .instagram-tile-overlay svg { width: 32px; height: 32px; }
+
+  /* Placeholder gradients for Instagram tiles */
+  .instagram-tile.placeholder-1 .instagram-tile-inner {
+    background: linear-gradient(135deg, #1d3d42 0%, #0f2a2e 100%);
+  }
+  .instagram-tile.placeholder-2 .instagram-tile-inner {
+    background: linear-gradient(135deg, #d4a55a 0%, #b08744 100%);
+  }
+  .instagram-tile.placeholder-3 .instagram-tile-inner {
+    background: linear-gradient(135deg, #ece1cf 0%, #d4a55a 100%);
+  }
+  .instagram-tile.placeholder-4 .instagram-tile-inner {
+    background: linear-gradient(135deg, #c45a3a 0%, #b08744 100%);
+  }
+  .instagram-tile.placeholder-5 .instagram-tile-inner {
+    background: linear-gradient(135deg, #0f2a2e 0%, #1d3d42 100%);
+  }
+  .instagram-tile.placeholder-6 .instagram-tile-inner {
+    background: linear-gradient(135deg, #b08744 0%, #0f2a2e 100%);
+  }
+
+  .instagram-tile svg.decor {
+    width: 50%; height: 50%;
+    opacity: 0.5;
+  }
+@media (max-width: 992px) { .instagram-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+@media (max-width: 768px) { .instagram-grid { grid-template-columns: repeat(2, 1fr); } }
