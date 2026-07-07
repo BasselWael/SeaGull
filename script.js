@@ -1477,3 +1477,53 @@ I will send my CV to careers@seagull.eg.
     renderMenuTabs();
     renderMenuFor(BRANCHES[0].id);
   }
+
+// Location Map Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const locationDots = document.querySelectorAll('.loc-pin');
+    const locationDetails = document.querySelectorAll('.loc-detail-card');
+    
+    if (locationDots.length > 0 && locationDetails.length > 0) {
+        // Find initially active pin or default to the first one
+        let initialLocId = null;
+        const activePin = document.querySelector('.loc-pin.active');
+        if (activePin) {
+            initialLocId = activePin.getAttribute('data-loc');
+        } else {
+            initialLocId = locationDots[0].getAttribute('data-loc');
+            locationDots[0].classList.add('active');
+        }
+
+        // Hide all except the initial one
+        locationDetails.forEach(detail => {
+            if (detail.id !== 'detail-' + initialLocId) {
+                detail.style.display = 'none';
+            } else {
+                detail.style.display = 'block';
+            }
+        });
+
+        // Add click event listeners
+        locationDots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                // Remove active from all dots
+                locationDots.forEach(d => d.classList.remove('active'));
+                // Add active to clicked
+                this.classList.add('active');
+                
+                const locId = this.getAttribute('data-loc');
+                
+                // Hide all details
+                locationDetails.forEach(detail => {
+                    detail.style.display = 'none';
+                });
+                
+                // Show corresponding detail
+                const activeDetail = document.getElementById('detail-' + locId);
+                if (activeDetail) {
+                    activeDetail.style.display = 'block';
+                }
+            });
+        });
+    }
+});
