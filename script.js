@@ -1527,3 +1527,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+// ─── ACCORDION LOGIC ──────────────────────────────────────────
+function initAccordion() {
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  if (accordionHeaders.length === 0) return;
+  
+  accordionHeaders.forEach(header => {
+    if (header.dataset.bound) return;
+    header.dataset.bound = 'true';
+    
+    header.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent other listeners
+      const item = header.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Close all items first
+      document.querySelectorAll('.accordion-item').forEach(otherItem => {
+        otherItem.classList.remove('active');
+        const icon = otherItem.querySelector('.icon');
+        if (icon) icon.textContent = '+';
+      });
+
+      // If it wasn't active, open it
+      if (!isActive) {
+        item.classList.add('active');
+        const icon = item.querySelector('.icon');
+        if (icon) icon.textContent = '-';
+      }
+    });
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAccordion);
+} else {
+  initAccordion();
+}

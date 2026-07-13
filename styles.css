@@ -2257,3 +2257,226 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 {
   }
 @media (max-width: 992px) { .instagram-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
 @media (max-width: 768px) { .instagram-grid { grid-template-columns: repeat(2, 1fr); } }
+
+
+
+/* --- RESTORED MENU CSS --- */
+
+.menu-tabs-wrap {
+    position: relative;
+    margin-bottom: 70px;
+    border-bottom: 1px solid rgba(15, 42, 46, 0.15);
+  }
+  .menu-tabs {
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .menu-tabs::-webkit-scrollbar { display: none; }
+  .menu-tab {
+    background: none;
+    border: none;
+    padding: 20px 26px;
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    transition: color 0.25s;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+  html[lang="ar"] .menu-tab { letter-spacing: 0; text-transform: none; font-size: 15px; }
+  .menu-tab:hover { color: var(--ink); opacity: 1; }
+  .menu-tab.active { color: var(--ink); font-weight: 700; opacity: 1; }
+  .menu-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 2px;
+    background: var(--brass);
+  }
+  .menu-tab .seasonal-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--coral);
+    margin-left: 6px;
+    vertical-align: 2px;
+  }
+  html[dir="rtl"] .menu-tab .seasonal-dot { margin-left: 0; margin-right: 6px; }
+
+  .branch-intro {
+    margin-bottom: 56px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(15, 42, 46, 0.1);
+  }
+  .branch-sub {
+    font-size: 11px;
+    color: var(--brass);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  html[lang="ar"] .branch-sub { letter-spacing: 0; text-transform: none; font-size: 14px; }
+  .branch-intro h3 {
+    font-family: var(--f-display);
+    font-size: clamp(34px, 4.2vw, 56px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 10px;
+    font-variation-settings: 'SOFT' 40, 'opsz' 60;
+  }
+  html[lang="ar"] .branch-intro h3 {
+    font-family: var(--f-ar-display);
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  .branch-intro h3 em { font-style: italic; color: var(--brass); }
+  html[lang="ar"] .branch-intro h3 em { font-style: normal; }
+  .branch-note {
+    margin-top: 14px;
+    font-family: var(--f-display);
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 15px;
+    max-width: 580px;
+    padding: 14px 18px;
+    background: rgba(176, 135, 68, 0.08);
+    border-left: 2px solid var(--brass);
+  }
+  html[dir="rtl"] .branch-note { border-left: none; border-right: 2px solid var(--brass); }
+  html[lang="ar"] .branch-note {
+    font-family: var(--f-ar-display);
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  .menu-category { margin-bottom: 68px; }
+  .category-head {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(176, 135, 68, 0.3);
+  }
+  .category-head h4 {
+    font-family: var(--f-display);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    font-variation-settings: 'SOFT' 40, 'opsz' 48;
+    color: var(--ink);
+    line-height: 1;
+  }
+  html[lang="ar"] .category-head h4 {
+    font-family: var(--f-ar-display);
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  .category-head .ar-cat {
+    font-family: var(--f-ar-display);
+    font-weight: 400;
+    color: var(--brass);
+    font-size: 20px;
+  }
+  html[lang="ar"] .category-head .ar-cat {
+    font-family: var(--f-display);
+    font-style: italic;
+    font-size: 18px;
+  }
+  .category-head .ornament {
+    flex: 1;
+    height: 1px;
+    background: rgba(176, 135, 68, 0.3);
+    position: relative;
+    top: -8px;
+  }
+
+  .dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 50px;
+  }
+  .dishes-grid.single-col { grid-template-columns: 1fr; }
+  .dish-item {
+    padding: 14px 0;
+    border-bottom: 1px dotted rgba(15, 42, 46, 0.15);
+  }
+  .dish-item .dish-name {
+    font-family: var(--f-display);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin-bottom: 2px;
+    font-variation-settings: 'SOFT' 30, 'opsz' 24;
+  }
+  html[lang="ar"] .dish-item .dish-name {
+    font-family: var(--f-ar-display);
+    font-weight: 700;
+    letter-spacing: 0;
+    font-size: 19px;
+  }
+  .dish-item .dish-sub {
+    font-size: 13px;
+    color: var(--brass);
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  html[lang="en"] .dish-item .dish-sub { font-family: var(--f-ar-display); }
+  html[lang="ar"] .dish-item .dish-sub { font-family: var(--f-display); font-style: italic; }
+  .dish-item .dish-desc {
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    font-style: italic;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+  html[lang="ar"] .dish-item .dish-desc { font-style: normal; font-size: 14px; line-height: 1.7; }
+  .dish-item .signature-mark {
+    display: inline-block;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--coral);
+    font-weight: 700;
+    margin-left: 8px;
+    padding: 2px 6px;
+    border: 1px solid rgba(196, 90, 58, 0.4);
+    vertical-align: 2px;
+  }
+  html[lang="ar"] .dish-item .signature-mark {
+    letter-spacing: 0; text-transform: none; font-size: 11px;
+    margin-left: 0; margin-right: 8px;
+  }
+
+  .menu-footer-note {
+    margin-top: 70px;
+    text-align: center;
+    padding: 30px;
+    background: var(--cream);
+    border: 1px solid rgba(176, 135, 68, 0.25);
+    font-size: 13px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+  }
+  html[lang="ar"] .menu-footer-note { font-size: 14px; line-height: 1.9; }
+  .menu-footer-note strong { color: var(--brass); font-weight: 700; }
+
+  
+.dish-item {
+  padding: 14px 0px;
+  border-bottom: 1px solid rgba(176, 135, 68, 0.3) !important;
+}
