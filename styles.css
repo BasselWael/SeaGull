@@ -566,7 +566,7 @@ button {
    Menu Listing Section
    ========================================================================== */
 .menu-section {
-    padding: var(--spacing-xl) 5%;
+    padding: var(--spacing-xl) 5% var(--spacing-lg);
     background-color: var(--color-bg-alt);
 }
 
@@ -718,7 +718,7 @@ button {
 }
 
 .locations-section {
-    padding: var(--spacing-xl) 5%;
+    padding: var(--spacing-lg) 5% var(--spacing-xl);
     background-color: var(--color-bg-alt);
 }
 
@@ -1148,11 +1148,12 @@ button {
     width: 100%;
     text-align: left;
     padding: 1.5rem 0;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: var(--font-serif);
     color: var(--color-text-dark);
     background-color: transparent;
     border: none;
@@ -1182,7 +1183,7 @@ button {
 }
 
 .accordion-item.active .icon {
-    transform: rotate(45deg);
+    transform: rotate(0deg);
 }
 
 /* ==========================================================================
@@ -1498,7 +1499,13 @@ button {
     font-size: 0.8rem;
     letter-spacing: 1px;
     margin-bottom: 1rem;
+    transition: text-shadow 0.3s ease;
+    cursor: default;
     font-weight: 600;
+}
+
+.marina-exp-subtitle:hover {
+    text-shadow: 0 0 10px var(--color-accent);
 }
 
 .marina-exp-title {
@@ -1543,7 +1550,7 @@ button {
 }
 .marina-exp-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 40px rgba(176, 135, 68, 0.25);
 }
 
 .marina-exp-card-subtitle {
@@ -2479,4 +2486,46 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 {
 .dish-item {
   padding: 14px 0px;
   border-bottom: 1px solid rgba(176, 135, 68, 0.3) !important;
+}
+
+/* Mobile Menu Adjustments */
+@media (max-width: 760px) {
+  .menu-featured { padding: 40px 28px; }
+  .menu-featured-grid { grid-template-columns: 1fr; gap: 32px; }
+  .dishes-grid { grid-template-columns: 1fr; gap: 0; }
+  .menu-tab { padding: 16px 18px; font-size: 11px; }
+  .category-head { flex-wrap: wrap; gap: 10px; }
+  .category-head h4 { font-size: 26px; }
+}
+
+/* Additional Mobile Header Tweaks */
+@media (max-width: 760px) {
+  .main-header {
+    padding: 1rem 4%;
+  }
+  .logo-img {
+    height: 40px;
+  }
+  .header-actions {
+    gap: 0.5rem;
+  }
+  .lang-toggle, .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Force prevent horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Remove extra margin on the last menu category so it doesn't create blank space */
+.menu-category:last-child {
+  margin-bottom: 0 !important;
+}
+
+html[lang="ar"] .accordion-header {
+  font-family: var(--f-ar-display);
 }
