@@ -1226,13 +1226,18 @@ button {
 
 .footer-bottom {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1rem;
     padding-top: 1rem;
+}
+
+.footer-col {
+    grid-column: 1 / -1;
 }
 
 @media (min-width: 768px) {
     .footer-bottom { grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 2rem; }
+    .footer-col { grid-column: auto; }
 }
 
 .footer-logo {
@@ -1864,11 +1869,13 @@ button {
 
 .insta-title {
     font-family: var(--font-serif);
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 8vw, 3rem);
     font-style: italic;
     color: var(--color-accent);
     margin-bottom: 1rem;
-    line-height: 1;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .insta-link {
