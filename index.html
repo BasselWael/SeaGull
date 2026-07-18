@@ -5,6 +5,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Seagull — Seafood Fine Dining · Since 1985</title>
+<!-- Favicon -->
+<link rel="icon" href="assets/images/logo-black.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="assets/images/logo-white.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/images/logo-white.png">
 <meta content="Egypt's legacy seafood house. Four decades of a single, stubborn idea: bring the catch in fresh, cook it simply, serve it without apology." name="description"/>
 <link href="styles.css" rel="stylesheet"/>
 <!-- Google Fonts -->
@@ -337,7 +341,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 <div class="loc-detail-card" id="detail-marina">
@@ -360,7 +364,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 <div class="loc-detail-card" id="detail-dokki" style="display: none;">
@@ -383,7 +387,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 <div class="loc-detail-card" id="detail-newcairo" style="display: none;">
@@ -406,7 +410,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 <div class="loc-detail-card" id="detail-gleem" style="display: none;">
@@ -429,7 +433,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 <div class="loc-detail-card" id="detail-madinaty" style="display: none;">
@@ -452,7 +456,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 <div class="loc-detail-card" id="detail-sheikhzayed" style="display: none;">
@@ -475,7 +479,7 @@
 </table>
 <div class="card-actions">
 <button class="btn-card-dir">📍 DIRECTIONS</button>
-<button class="btn-card-res">RESERVE HERE</button>
+<button class="btn-card-res" onclick="document.getElementById('reservationDialog').showModal()">RESERVE HERE</button>
 </div>
 </div>
 </div>
@@ -519,7 +523,7 @@
 </div>
 </section>
 <!-- Delivery Section -->
-<section class="delivery-section">
+<section class="delivery-section" id="delivery">
 <div class="delivery-header reveal">
 <p class="section-subtitle">Delivery &amp; Takeaway</p>
 <h2 class="section-title">The sea — <span class="italic-serif text-accent">Delivered.</span></h2>
@@ -529,23 +533,19 @@
 <div class="delivery-icon delivery-card-icon" style="display: flex; align-items: center; justify-content: center;"><img src="icons/talabat.svg" alt="Talabat" height="64" width="64" style="margin: auto;"></div>
 <h3><span class="en">Talabat</span><span class="ar">طلبات</span></h3>
 <p>Our full menu, delivered across Cairo and <span class="en"><span class="en">Alexandria</span><span class="ar">الإسكندرية</span></span><span class="ar">الإسكندرية</span> via Talabat.</p>
-<button class="btn-primary btn-small" style="background-color: #fe4b00;"><span class="en">ORDER ON TALABAT</span><span class="ar">اطلب عبر طلبات</span></button>
+<a href="https://www.talabat.com/egypt/restaurant/search?q=seagull" target="_blank" rel="noopener" class="btn-primary btn-small" style="background-color: #fe4b00; text-decoration: none; display: inline-block; text-align: center;"><span class="en">ORDER ON TALABAT</span><span class="ar">اطلب عبر طلبات</span></a>
 </div>
 <div class="delivery-card whatsapp">
 <div class="delivery-icon delivery-card-icon" style="display: flex; align-items: center; justify-content: center;"><img src="icons/whatsapp.svg" alt="WhatsApp" height="64" width="64" style="margin: auto;"></div>
 <h3><span class="en"><span class="en">WhatsApp</span><span class="ar">واتساب</span></span><span class="ar">واتساب</span></h3>
-<p><span class="en"><span class="en">Order directly from the house. Fast, personal, and straight to the kitchen.</span><span class="ar">اطلب مباشرةً من البيت. سريع وشخصي ومباشر للمطبخ.</span></span>
-          <span class="ar">اطلب مباشرةً من البيت. سريع وشخصي ومباشر للمطبخ.</span></p>
-<button class="btn-success btn-small"><span class="en">CHAT ON WHATSAPP</span><span class="ar">تواصل عبر واتساب</span></button>
+<p><span class="en">Order directly from the house. Fast, personal, and straight to the kitchen.</span><span class="ar">اطلب مباشرةً من البيت. سريع وشخصي ومباشر للمطبخ.</span></p>
+<a href="https://wa.me/201212333311?text=Hello%20Seagull%2C%20I%27d%20like%20to%20place%20a%20delivery%20order." target="_blank" rel="noopener" class="btn-success btn-small" style="text-decoration: none; display: inline-block; text-align: center;"><span class="en">CHAT ON WHATSAPP</span><span class="ar">تواصل عبر واتساب</span></a>
 </div>
 <div class="delivery-card phone">
 <div class="delivery-icon delivery-card-icon" style="display: flex; align-items: center; justify-content: center;"><img src="icons/call.svg" alt="Call" height="64" width="64" style="margin: auto;"></div>
-<h3><span class="en"><span class="en">Call Direct</span><span class="ar">اتصل مباشرةً</span></span>
-          <span class="ar">اتصل مباشرةً</span></h3>
-<p><span class="en"><span class="en">Speak to your closest branch and place your order the classic way.</span><span class="ar">تحدث مباشرةً مع أقرب فرع واطلب بالطريقة الكلاسيكية.</span></span>
-          <span class="ar">تحدث مباشرةً مع أقرب فرع واطلب بالطريقة الكلاسيكية.</span></p>
-<button class="btn-dark btn-small"><span class="en"><span class="en">012 1233 3311</span><span class="ar">012 1233 3311</span></span>
-          <span class="ar"><span class="en">012 1233 3311</span><span class="ar">012 1233 3311</span></span></button>
+<h3><span class="en">Call Direct</span><span class="ar">اتصل مباشرةً</span></h3>
+<p><span class="en">Speak to your closest branch and place your order the classic way.</span><span class="ar">تحدث مباشرةً مع أقرب فرع واطلب بالطريقة الكلاسيكية.</span></p>
+<a href="tel:+201212333311" class="btn-dark btn-small" style="text-decoration: none; display: inline-block; text-align: center;"><span class="en">012 1233 3311</span><span class="ar">012 1233 3311</span></a>
 </div>
 </div>
 </section>
@@ -653,7 +653,7 @@
 <span class="ar">"لا يُفوَّت" لمحبي كل ما يتعلق بالأسماك، مع قوائم طعام "فوق الممتازة."</span>
 </p>
 <div class="featured-divider"></div>
-<a class="featured-link" href="#">READ THE REVIEW →</a>
+<a class="featured-link" href="https://www.cairo360.com/article/restaurants/sea-gull-reasonably-priced-seafood-excellent-mezzas/" target="_blank" rel="noopener">READ THE REVIEW →</a>
 </div>
 <!-- Card 2 -->
 <div class="featured-card">
@@ -664,7 +664,7 @@
 <span class="ar">وجهة عائلية منذ ١٩٨٥ — فرع الدقي على متن سفينة راسية أمام برج القاهرة.</span>
 </p>
 <div class="featured-divider"></div>
-<a class="featured-link" href="#">READ THE FEATURE →</a>
+<a class="featured-link" href="https://www.localguidetoegypt.com/post/7-best-seafood-restaurants-in-cairo-egypt" target="_blank" rel="noopener">READ THE FEATURE →</a>
 </div>
 <!-- Card 3 -->
 <div class="featured-card">
@@ -675,7 +675,7 @@
 <span class="ar">ضمن أفضل خمسين مطعم مأكولات بحرية في القاهرة، مشهور بصيده اليومي الطازج.</span>
 </p>
 <div class="featured-divider"></div>
-<a class="featured-link" href="#">VIEW THE LIST →</a>
+<a class="featured-link" href="https://wanderlog.com/list/geoCategory/82468/best-seafood-restaurants-in-cairo" target="_blank" rel="noopener">VIEW THE LIST →</a>
 </div>
 </div>
 </div>
@@ -839,8 +839,8 @@
 </div>
 <div class="accordion-item">
 <button class="accordion-header"><span class="en">Can I host a private event?</span><span class="ar">هل يمكنني استضافة مناسبة خاصة؟</span> <span class="icon">+</span></button>
-<div class="accordion-body"><p><span class="en">Yes — we host birthdays, engagements, corporate dinners, and private parties across all branches. Full-venue bookings are possible at Marina (summer) and our boutique hotel. <button onclick="openModal('events-modal')" style="background:none;border:none;color:var(--brass);cursor:pointer;padding:0;font:inherit;text-decoration:underline;">Fill in our events form</button> and our team will be in touch within 24 hours.</span>
-<span class="ar">نعم — نستضيف أعياد الميلاد والخطوبة والعشاءات الرسمية والحفلات الخاصة في جميع الفروع. حجز المكان بالكامل متاح في مارينا (صيفًا) وفي فندق البوتيك. <button onclick="openModal('events-modal')" style="background:none;border:none;color:var(--brass);cursor:pointer;padding:0;font:inherit;text-decoration:underline;">املأ نموذج المناسبات</button> وسيتواصل معك فريقنا خلال ٢٤ ساعة.</span></p></div>
+<div class="accordion-body"><p><span class="en">Yes — we host birthdays, engagements, corporate dinners, and private parties across all branches. Full-venue bookings are possible at Marina (summer) and our boutique hotel. <button onclick="document.getElementById('eventsDialog').showModal()" style="background:none;border:none;color:var(--brass);cursor:pointer;padding:0;font:inherit;text-decoration:underline;">Fill in our events form</button> and our team will be in touch within 24 hours.</span>
+<span class="ar">نعم — نستضيف أعياد الميلاد والخطوبة والعشاءات الرسمية والحفلات الخاصة في جميع الفروع. حجز المكان بالكامل متاح في مارينا (صيفًا) وفي فندق البوتيك. <button onclick="document.getElementById('eventsDialog').showModal()" style="background:none;border:none;color:var(--brass);cursor:pointer;padding:0;font:inherit;text-decoration:underline;">املأ نموذج المناسبات</button> وسيتواصل معك فريقنا خلال ٢٤ ساعة.</span></p></div>
 </div>
 </div>
 </div>
@@ -865,13 +865,13 @@
 </div>
 <div class="link-col">
 <h4><span class="en">VISIT</span><span class="ar">زرنا</span></h4>
-<a href="#"><span class="en">EL MAX</span><span class="ar">المكس</span></a>
-<a href="#"><span class="en">MARINA</span><span class="ar">مارينا</span></a>
-<a href="#"><span class="en">DOKKI</span><span class="ar">الدقي</span></a>
-<a href="#"><span class="en">NEW CAIRO</span><span class="ar">القاهرة الجديدة</span></a>
-<a href="#"><span class="en">GLEEM</span><span class="ar">جليم</span></a>
-<a href="#"><span class="en">MADINATY</span><span class="ar">مدينتي</span></a>
-<a href="#"><span class="en">SHEIKH ZAYED</span><span class="ar">الشيخ زايد</span></a>
+<a href="#locations"><span class="en">EL MAX</span><span class="ar">المكس</span></a>
+<a href="#locations"><span class="en">MARINA</span><span class="ar">مارينا</span></a>
+<a href="#locations"><span class="en">DOKKI</span><span class="ar">الدقي</span></a>
+<a href="#locations"><span class="en">NEW CAIRO</span><span class="ar">القاهرة الجديدة</span></a>
+<a href="#locations"><span class="en">GLEEM</span><span class="ar">جليم</span></a>
+<a href="#locations"><span class="en">MADINATY</span><span class="ar">مدينتي</span></a>
+<a href="#locations"><span class="en">SHEIKH ZAYED</span><span class="ar">الشيخ زايد</span></a>
 </div>
 <div class="link-col">
 <h4><span class="en">THE BRAND</span><span class="ar">العلامة</span></h4>
@@ -886,10 +886,10 @@
 </div>
 <div class="link-col">
 <h4><span class="en">FOLLOW</span><span class="ar">تواصل</span></h4>
-<a href="https://www.facebook.com/SeagullRestaurants/" target="_blank">FACEBOOK</a>
-<a href="https://www.instagram.com/seagullrestaurantegy" target="_blank">INSTAGRAM</a>
-<a href="#">TRIP ADVISOR</a>
-<a href="#">HELLO@SEAGULL.EG</a>
+<a href="https://www.facebook.com/SeagullRestaurants/" target="_blank" rel="noopener">FACEBOOK</a>
+<a href="https://www.instagram.com/seagullrestaurantegy" target="_blank" rel="noopener">INSTAGRAM</a>
+<a href="https://www.tripadvisor.com" target="_blank" rel="noopener">TRIP ADVISOR</a>
+<a href="mailto:hello@seagull.eg">HELLO@SEAGULL.EG</a>
 </div>
 </div>
 <div class="footer-legal">
@@ -906,7 +906,7 @@
         <span class="ar">احجز طاولة</span></p>
 <h2 class="section-title"><span class="en"><span class="en">Reserve</span><span class="ar">احجز</span></span><span class="ar">احجز</span> at <span class="italic-serif text-accent"><span class="en"><span class="en">Seagull</span><span class="ar">سي جل</span></span><span class="ar">سي جل</span>.</span></h2>
 <p class="modal-desc">Share a few details and we'll confirm your table via <span class="en"><span class="en">WhatsApp</span><span class="ar">واتساب</span></span><span class="ar">واتساب</span> within the hour.</p>
-<form class="reservation-form" id="resForm">
+<form class="reservation-form" id="resForm" onsubmit="return submitReservation(event)">
 <div class="form-group full-width">
 <label for="branch"><span class="en"><span class="en">Branch</span><span class="ar">الفرع</span></span><span class="ar">الفرع</span></label>
 <select id="branch" name="branch" required="">
@@ -914,10 +914,10 @@
 <option value="elmax" data-en="El Max, Alexandria" data-ar="المكس، الإسكندرية">El Max, Alexandria</option>
 <option value="marina" data-en="Marina, North Coast" data-ar="مارينا، الساحل الشمالي">Marina, North Coast</option>
 <option value="dokki" data-en="Dokki, Cairo" data-ar="الدقي، القاهرة">Dokki, Cairo</option>
-<option value="newcairo" data-en="New Cairo" data-ar="القاهرة الجديدة"><span class="en">New Cairo</span><span class="ar">القاهرة الجديدة</span></option>
+<option value="newcairo" data-en="New Cairo" data-ar="القاهرة الجديدة">New Cairo</option>
 <option value="gleem" data-en="Gleem, Alexandria" data-ar="جليم، الإسكندرية">Gleem, Alexandria</option>
-<option value="madinaty" data-en="Madinaty" data-ar="مدينتي"><span class="en">Madinaty</span><span class="ar">مدينتي</span></option>
-<option value="sheikhzayed" data-en="Sheikh Zayed" data-ar="الشيخ زايد"><span class="en">Sheikh Zayed</span><span class="ar">الشيخ زايد</span></option>
+<option value="madinaty" data-en="Madinaty" data-ar="مدينتي">Madinaty</option>
+<option value="sheikhzayed" data-en="Sheikh Zayed" data-ar="الشيخ زايد">Sheikh Zayed</option>
 </select>
 </div>
 <div class="form-row">
@@ -980,10 +980,10 @@
         <span class="ar">المناسبات الخاصة</span></p>
 <h2 class="section-title">Host with <span class="italic-serif text-accent"><span class="en"><span class="en">Seagull</span><span class="ar">سي جل</span></span><span class="ar">سي جل</span>.</span></h2>
 <p class="modal-desc"><span class="en">Share a few details and our events team will contact you shortly.</span><span class="ar">شاركنا بعض التفاصيل وسيتواصل معك فريق المناسبات قريباً.</span></p>
-<form class="reservation-form" onsubmit="event.preventDefault(); this.parentElement.parentElement.close();">
+<form class="reservation-form" id="eventsForm" onsubmit="return submitEvent(event)">
 <div class="form-group full-width">
 <label for="event-type"><span class="en"><span class="en">Event Type</span><span class="ar">نوع المناسبة</span></span><span class="ar">نوع المناسبة</span></label>
-<select id="event-type" required>
+<select id="event-type" name="eventType" required>
 <option value="corporate" data-en="Corporate Event" data-ar="حدث شركة">Corporate Event</option>
 <option value="wedding" data-en="Wedding / Engagement" data-ar="زفاف / خطوبة">Wedding / Engagement</option>
 <option value="birthday">Birthday Party</option>
@@ -993,11 +993,11 @@
 <div class="form-row">
 <div class="form-group">
 <label for="event-name"><span class="en"><span class="en">Your Name</span><span class="ar">اسمك</span></span><span class="ar">اسمك</span></label>
-<input id="event-name" required type="text"/>
+<input id="event-name" name="name" required type="text"/>
 </div>
 <div class="form-group">
 <label for="event-phone"><span class="en"><span class="en">Phone</span><span class="ar">الهاتف</span></span><span class="ar">رقم الهاتف</span></label>
-<input id="event-phone" placeholder="+20..." required type="tel"/>
+<input id="event-phone" name="phone" placeholder="+20..." required type="tel"/>
 </div>
 </div>
 <button class="btn-dark full-width mt-large" type="submit">Submit Inquiry</button>
@@ -1012,20 +1012,20 @@
 <p class="section-subtitle"><span class="en">Join Us</span><span class="ar">انضم إلينا</span></p>
 <h2 class="section-title"><span class="en"><span class="en">Careers</span><span class="ar">الوظائف</span></span><span class="ar">الوظائف</span> at <span class="italic-serif text-accent"><span class="en"><span class="en">Seagull</span><span class="ar">سي جل</span></span><span class="ar">سي جل</span>.</span></h2>
 <p class="modal-desc"><span class="en">We are always looking for passionate individuals to join our growing team.</span><span class="ar">نبحث دائماً عن الشغوفين للانضمام إلى فريقنا المتنامي.</span></p>
-<form class="reservation-form" onsubmit="event.preventDefault(); this.parentElement.parentElement.close();">
+<form class="reservation-form" id="careersForm" onsubmit="return submitCareer(event)">
 <div class="form-row">
 <div class="form-group">
 <label for="career-name"><span class="en"><span class="en">Your Name</span><span class="ar">اسمك</span></span><span class="ar">اسمك</span></label>
-<input id="career-name" required type="text"/>
+<input id="career-name" name="name" required type="text"/>
 </div>
 <div class="form-group">
 <label for="career-phone"><span class="en"><span class="en">Phone</span><span class="ar">الهاتف</span></span><span class="ar">رقم الهاتف</span></label>
-<input id="career-phone" placeholder="+20..." required type="tel"/>
+<input id="career-phone" name="phone" placeholder="+20..." required type="tel"/>
 </div>
 </div>
 <div class="form-group full-width">
 <label for="career-role">Role of Interest</label>
-<input id="career-role" placeholder="e.g. Chef, Waiter, Manager..." required type="text"/>
+<input id="career-role" name="position" placeholder="e.g. Chef, Waiter, Manager..." required type="text"/>
 </div>
 <button class="btn-dark full-width mt-large" type="submit"><span class="en"><span class="en">Submit Application</span><span class="ar">أرسل طلبك</span></span>
           <span class="ar">أرسل طلبك</span></button>

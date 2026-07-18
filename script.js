@@ -362,7 +362,7 @@ ${data.requests}` : ''}
 — Sent via seagull.eg`;
     const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
-    closeModal('reserve-modal');
+    document.getElementById('reservationDialog').close();
     f.reset();
     return false;
   }
@@ -375,21 +375,13 @@ ${data.requests}` : ''}
 `🎉 *Private Event Inquiry — Seagull*
 
 *Event type:* ${data.eventType}
-*Branch:* ${data.branch}
-*Guests:* ${data.guests}
-*Preferred date:* ${data.date}${data.flexibility ? `
-*Flexibility:* ${data.flexibility}` : ''}
-
 *Name:* ${data.name}
-*Phone:* ${data.phone}${data.message ? `
-
-*Vision:*
-${data.message}` : ''}
+*Phone:* ${data.phone}
 
 — Sent via seagull.eg`;
     const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
-    closeModal('events-modal');
+    document.getElementById('eventsDialog').close();
     f.reset();
     return false;
   }
@@ -402,22 +394,15 @@ ${data.message}` : ''}
 `💼 *Career Application — Seagull*
 
 *Position:* ${data.position}
-*Location:* ${data.location}
-*Experience:* ${data.experience}
-
 *Name:* ${data.name}
 *Phone:* ${data.phone}
-*Email:* ${data.email}${data.message ? `
-
-*About:*
-${data.message}` : ''}
 
 I will send my CV to careers@seagull.eg.
 
 — Sent via seagull.eg`;
     const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
-    closeModal('careers-modal');
+    document.getElementById('careersDialog').close();
     f.reset();
     return false;
   }
