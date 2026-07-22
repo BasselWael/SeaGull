@@ -960,7 +960,7 @@ button {
 }
 
 .card-table th {
-    text-align: left;
+    text-align: start;
     color: var(--color-accent);
     font-weight: 600;
     width: 100px;
@@ -1042,7 +1042,7 @@ button {
 .delivery-header .section-title {
     font-size: 3.5rem;
     margin-bottom: 0;
-    text-align: left;
+    text-align: start;
 }
 
 .delivery-grid {
@@ -1159,7 +1159,7 @@ button {
 
 .accordion-header {
     width: 100%;
-    text-align: left;
+    text-align: start;
     padding: 1.5rem 0;
     font-size: 1.1rem;
     display: flex;
@@ -1353,8 +1353,7 @@ button {
         padding: 2.5rem 1.5rem 1.5rem;
     }
     .reservation-form .form-row {
-        flex-direction: column;
-        gap: 0;
+        display: block;
     }
 }
 
@@ -2177,7 +2176,7 @@ section { scroll-margin-top: 120px; }
   z-index: 3;
 }
 html[dir="rtl"] .hero-meta {
-  right: auto; left: 32px; text-align: left;
+  right: auto; left: 32px; text-align: start;
 }
 .hero-meta .est {
   font-family: var(--f-display);
@@ -2199,7 +2198,7 @@ html[lang="ar"] .hero-meta .est {
   line-height: 1;
 }
 @media (max-width: 992px) {
-  .hero-meta { position: static; text-align: left; margin-top: 30px; }
+  .hero-meta { position: static; text-align: start; margin-top: 30px; }
   html[dir="rtl"] .hero-meta { text-align: right; }
 }
 

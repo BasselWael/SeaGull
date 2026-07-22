@@ -787,8 +787,8 @@ I will send my CV to careers@seagull.eg.
         { en: 'Grape & Berry', ar: 'عنب توت' },
         { en: 'Lemon Mint', ar: 'ليمون نعناع' },
         { en: 'Gum Watermelon', ar: 'علكة بطيخ' },
-        { en: 'Love', ar: 'لاف' },
-        { en: '66', ar: '٦٦' },
+        { en: 'Love 66', ar: 'لاف ٦٦' },
+        
         { en: 'Candy Drops', ar: 'كاندي دروبس' },
         { en: 'Strawberry Cream', ar: 'فراولة قشطة' },
         { en: 'Gum Mint', ar: 'علكة نعناع' },
@@ -800,7 +800,7 @@ I will send my CV to careers@seagull.eg.
       { name: { en: 'Maassel', ar: 'المعسل' }, items: [
         { en: 'Saloum', ar: 'معسل سلوم' },
         { en: 'Qas', ar: 'معسل قص' },
-        { en: 'Natural Li', ar: 'لي طبي' }
+        { en: 'Disposable Hose', ar: 'لي طبي' }
       ]}
     ],
 
@@ -914,8 +914,8 @@ I will send my CV to careers@seagull.eg.
         { en: 'Grape & Berry', ar: 'عنب توت' },
         { en: 'Lemon Mint', ar: 'ليمون نعناع' },
         { en: 'Gum Watermelon', ar: 'علكة بطيخ' },
-        { en: 'Love', ar: 'لاف' },
-        { en: '66', ar: '٦٦' },
+        { en: 'Love 66', ar: 'لاف ٦٦' },
+        
         { en: 'Candy Drops', ar: 'كاندي دروبس' },
         { en: 'Strawberry Cream', ar: 'فراولة قشطة' },
         { en: 'Gum Mint', ar: 'علكة نعناع' },
@@ -927,7 +927,7 @@ I will send my CV to careers@seagull.eg.
       { name: { en: 'Maassel', ar: 'المعسل' }, items: [
         { en: 'Saloum', ar: 'معسل سلوم' },
         { en: 'Qas', ar: 'معسل قص' },
-        { en: 'Natural Li', ar: 'لي طبي' }
+        { en: 'Disposable Hose', ar: 'لي طبي' }
       ]}
     ],
 
@@ -1054,8 +1054,8 @@ I will send my CV to careers@seagull.eg.
         { en: 'Grape & Berry', ar: 'عنب توت' },
         { en: 'Lemon Mint', ar: 'ليمون نعناع' },
         { en: 'Gum Watermelon', ar: 'علكة بطيخ' },
-        { en: 'Love', ar: 'لاف' },
-        { en: '66', ar: '٦٦' },
+        { en: 'Love 66', ar: 'لاف ٦٦' },
+        
         { en: 'Candy Drops', ar: 'كاندي دروبس' },
         { en: 'Strawberry Cream', ar: 'فراولة قشطة' },
         { en: 'Gum Mint', ar: 'علكة نعناع' },
@@ -1067,7 +1067,7 @@ I will send my CV to careers@seagull.eg.
       { name: { en: 'Maassel', ar: 'المعسل' }, items: [
         { en: 'Saloum', ar: 'معسل سلوم' },
         { en: 'Qas', ar: 'معسل قص' },
-        { en: 'Natural Li', ar: 'لي طبي' }
+        { en: 'Disposable Hose', ar: 'لي طبي' }
       ]}
     ],
 
@@ -1174,8 +1174,8 @@ I will send my CV to careers@seagull.eg.
         { en: 'Grape & Berry', ar: 'عنب توت' },
         { en: 'Lemon Mint', ar: 'ليمون نعناع' },
         { en: 'Gum Watermelon', ar: 'علكة بطيخ' },
-        { en: 'Love', ar: 'لاف' },
-        { en: '66', ar: '٦٦' },
+        { en: 'Love 66', ar: 'لاف ٦٦' },
+        
         { en: 'Candy Drops', ar: 'كاندي دروبس' },
         { en: 'Strawberry Cream', ar: 'فراولة قشطة' },
         { en: 'Gum Mint', ar: 'علكة نعناع' },
@@ -1187,7 +1187,7 @@ I will send my CV to careers@seagull.eg.
       { name: { en: 'Maassel', ar: 'المعسل' }, items: [
         { en: 'Saloum', ar: 'معسل سلوم' },
         { en: 'Qas', ar: 'معسل قص' },
-        { en: 'Natural Li', ar: 'لي طبي' }
+        { en: 'Disposable Hose', ar: 'لي طبي' }
       ]}
     ],
 
@@ -1335,8 +1335,8 @@ I will send my CV to careers@seagull.eg.
         { en: 'Grape & Berry', ar: 'عنب توت' },
         { en: 'Lemon Mint', ar: 'ليمون نعناع' },
         { en: 'Gum Watermelon', ar: 'علكة بطيخ' },
-        { en: 'Love', ar: 'لاف' },
-        { en: '66', ar: '٦٦' },
+        { en: 'Love 66', ar: 'لاف ٦٦' },
+        
         { en: 'Candy Drops', ar: 'كاندي دروبس' },
         { en: 'Strawberry Cream', ar: 'فراولة قشطة' },
         { en: 'Gum Mint', ar: 'علكة نعناع' },
@@ -1348,7 +1348,7 @@ I will send my CV to careers@seagull.eg.
       { name: { en: 'Maassel', ar: 'المعسل' }, items: [
         { en: 'Saloum', ar: 'معسل سلوم' },
         { en: 'Qas', ar: 'معسل قص' },
-        { en: 'Natural Li', ar: 'لي طبي' }
+        { en: 'Disposable Hose', ar: 'لي طبي' }
       ]}
     ]
   };
