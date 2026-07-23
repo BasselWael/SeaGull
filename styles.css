@@ -2558,3 +2558,36 @@ html, body {
 html[lang="ar"] .accordion-header {
   font-family: var(--f-ar-display);
 }
+
+
+
+/* Fix Arabic Font Chopping */
+html[lang="ar"] body,
+html[lang="ar"] p,
+html[lang="ar"] span,
+html[lang="ar"] a,
+html[lang="ar"] div,
+html[lang="ar"] li,
+html[lang="ar"] button,
+html[lang="ar"] td,
+html[lang="ar"] th,
+html[lang="ar"] label {
+    line-height: 1.8 !important;
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6 {
+    line-height: 1.6 !important;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+}
+
+html[lang="ar"] .btn,
+html[lang="ar"] .menu-tab,
+html[lang="ar"] .nav-links a {
+    overflow: visible !important;
+}
