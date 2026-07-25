@@ -2591,3 +2591,65 @@ html[lang="ar"] .menu-tab,
 html[lang="ar"] .nav-links a {
     overflow: visible !important;
 }
+
+/* RTL modal close button placement */
+html[dir="rtl"] .close-btn {
+    right: auto;
+    left: 1.5rem;
+}
+
+/* Modal layout tweak on mobile */
+@media (max-width: 768px) {
+    .reservation-form .mt-large {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .stat-badge {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Arabic specific overrides for the stat numbers */
+html[lang="ar"] .stat-badge span {
+    font-family: var(--f-ar-display);
+    font-style: normal;
+    font-size: 3.5rem;
+}
+
+/* Make sure numbers fit in circles on mobile */
+@media (max-width: 768px) {
+    .stat-badge span {
+        font-size: 3rem !important;
+    }
+    html[lang="ar"] .stat-badge span {
+        font-size: 2.75rem !important;
+    }
+}
+
+/* Increase Arabic font size for "Locations" (foroo3) subtitle */
+html[lang="ar"] .section-subtitle-locations {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Increase general small uppercase texts in Arabic for readability */
+html[lang="ar"] .nav-links a {
+    font-size: 1.1rem;
+}
+
+/* RTL specific marquee scroll for reviews */
+html[dir="rtl"] .reviews-carousel {
+    animation: marqueeScrollRTL 35s linear infinite;
+}
+
+@keyframes marqueeScrollRTL {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(50% + 0.75rem)); }
+}

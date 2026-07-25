@@ -685,6 +685,12 @@ I will send my CV to careers@seagull.eg.
         if (text) opt.textContent = text;
     });
 
+    // Update all placeholders with data-en-placeholder/data-ar-placeholder attributes
+    document.querySelectorAll("[data-en-placeholder], [data-ar-placeholder]").forEach(el => {
+        const text = el.getAttribute("data-" + newLang + "-placeholder");
+        if (text) el.setAttribute("placeholder", text);
+    });
+
     // Save preference
     try {
       // Note: memory only, does not persist across sessions in this demo
@@ -1551,3 +1557,12 @@ if (document.readyState === 'loading') {
 } else {
   initAccordion();
 }
+
+// Prevent selecting past dates for reservation
+document.addEventListener('DOMContentLoaded', () => {
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+    }
+});
