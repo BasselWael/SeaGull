@@ -2,30 +2,30 @@
    CSS Variables & Base Setup
    ========================================================================== */
 :root {
-    --ink: #0f2a2e;
-    --ink-soft: #1d3d42;
-    --cream: #f4ece0;
-    --cream-deep: #ece1cf;
+    --ink: #001F3F;
+    --ink-soft: #004B87;
+    --cream: #F0F4F8;
+    --cream-deep: #6A9BD1;
     --brass: #b08744;
     --brass-light: #d4a55a;
     --coral: #c45a3a;
     --foam: #e8e0ce;
-    --shadow: rgba(15, 42, 46, 0.08);
+    --shadow: rgba(0, 31, 63, 0.08);
     
     --f-display: "Fraunces", "Times New Roman", serif;
     --f-body: "Manrope", -apple-system, sans-serif;
     --f-ar-display: "Amiri", serif;
     --f-ar-body: "Noto Kufi Arabic", sans-serif;
 
-    --color-bg-dark: #17353A; /* Matches PDF dark teal */
-    --color-bg-light: #F2EADE; /* Warmer Cream */
-    --color-bg-alt: #F2EADE; /* Also update alt to match if not specifically different */
+    --color-bg-dark: #002D55; /* Replaces dark teal */
+    --color-bg-light: #F0F4F8; /* Replaces cream */
+    --color-bg-alt: #F0F4F8; /* Also update alt to match if not specifically different */
     --color-accent: #B08744; /* Gold/Bronze */
-    --color-text-dark: #17353A; /* Matches PDF dark teal */
-    --color-text-light: #EBE5D9;
-    --color-text-muted: rgba(235, 229, 217, 0.7);
-    --color-border-light: rgba(17, 17, 17, 0.1);
-    --color-border-dark: rgba(235, 229, 217, 0.1);
+    --color-text-dark: #001F3F; /* Replaces dark teal */
+    --color-text-light: #F0F4F8;
+    --color-text-muted: rgba(240, 244, 248, 0.7);
+    --color-border-light: rgba(0, 31, 63, 0.1);
+    --color-border-dark: rgba(240, 244, 248, 0.1);
     --color-black: #000000;
     --color-success: #25D366; /* WhatsApp Green */
     --font-sans: 'Manrope', sans-serif;
@@ -2275,7 +2275,7 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 {
 
   /* Placeholder gradients for Instagram tiles */
   .instagram-tile.placeholder-1 .instagram-tile-inner {
-    background: linear-gradient(135deg, #1d3d42 0%, #0f2a2e 100%);
+    background: linear-gradient(135deg, #004B87 0%, #001F3F 100%);
   }
   .instagram-tile.placeholder-2 .instagram-tile-inner {
     background: linear-gradient(135deg, #d4a55a 0%, #b08744 100%);
@@ -2287,10 +2287,10 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 {
     background: linear-gradient(135deg, #c45a3a 0%, #b08744 100%);
   }
   .instagram-tile.placeholder-5 .instagram-tile-inner {
-    background: linear-gradient(135deg, #0f2a2e 0%, #1d3d42 100%);
+    background: linear-gradient(135deg, #001F3F 0%, #004B87 100%);
   }
   .instagram-tile.placeholder-6 .instagram-tile-inner {
-    background: linear-gradient(135deg, #b08744 0%, #0f2a2e 100%);
+    background: linear-gradient(135deg, #b08744 0%, #001F3F 100%);
   }
 
   .instagram-tile svg.decor {

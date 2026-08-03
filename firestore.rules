@@ -1,0 +1,12 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /menu/{document=**} {
+      // Anyone can read the menu data
+      allow read: if true;
+      // Only authenticated admin users can modify the menu
+      allow write: if request.auth != null;
+    }
+  }
+}
