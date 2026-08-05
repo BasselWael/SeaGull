@@ -3154,6 +3154,7 @@ const DEFAULT_MENU_DATA = {
             "ar": "ميكس سي فود بصوص البارميزان مع الأرز الأبيض."
           },
           "price": 250
+        },
         {
           "en": "Truffle Risotto",
           "ar": "روزيتو ترافل",

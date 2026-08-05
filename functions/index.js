@@ -17,29 +17,17 @@ exports.syncInstagramFeed = onSchedule("every 6 hours", async (event) => {
         }
         
         const data = configDoc.data();
-        let accessToken = data.access_token;
-        const lastRefresh = data.last_refresh ? data.last_refresh.toDate() : new Date(0);
+        const accessToken = data.access_token;
+        const igAccountId = data.ig_account_id;
         
-        // Refresh token if older than 30 days
-        const daysSinceRefresh = (Date.now() - lastRefresh.getTime()) / (1000 * 60 * 60 * 24);
-        if (daysSinceRefresh > 30) {
-            const refreshUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${accessToken}`;
-            const refreshRes = await fetch(refreshUrl);
-            const refreshData = await refreshRes.json();
-            if (refreshData.access_token) {
-                accessToken = refreshData.access_token;
-                await db.collection("config").doc("instagram").update({
-                    access_token: accessToken,
-                    last_refresh: new Date()
-                });
-                console.log("Instagram access token refreshed.");
-            } else {
-                console.error("Failed to refresh token:", refreshData);
-            }
+        if (!accessToken || !igAccountId) {
+            console.error("Missing access_token or ig_account_id in config.");
+            return;
         }
 
-        // Fetch feed
-        const url = `https://graph.instagram.com/me/media?fields=id,media_url,permalink,media_type&limit=6&access_token=${accessToken}`;
+        // Fetch feed using the modern Instagram Graph API (v20.0)
+        // With a Long-Lived Page Access Token, token refresh is no longer necessary!
+        const url = `https://graph.facebook.com/v20.0/${igAccountId}/media?fields=id,media_url,permalink,media_type&limit=15&access_token=${accessToken}`;
         const response = await fetch(url);
         const feedData = await response.json();
         
