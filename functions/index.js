@@ -10,20 +10,9 @@ const db = getFirestore();
 // and save the feed to a public document.
 exports.syncInstagramFeed = onSchedule("every 6 hours", async (event) => {
     try {
-        const configDoc = await db.collection("config").doc("instagram").get();
-        if (!configDoc.exists) {
-            console.error("No Instagram configuration found.");
-            return;
-        }
-        
-        const data = configDoc.data();
-        const accessToken = data.access_token;
-        const igAccountId = data.ig_account_id;
-        
-        if (!accessToken || !igAccountId) {
-            console.error("Missing access_token or ig_account_id in config.");
-            return;
-        }
+        // We are hardcoding the permanent access token here to completely bypass the need for Firestore configuration!
+        const accessToken = "EAAOLZAZCsZChK0BSIyBnrvDh6BpFLKaWPkIQOYJBc2kLrac8NPsyaKc0KwYcEktkBwEx7eYBnCaxZCzQSCRMhptBBMPWjHKuOUF7UY1hNKNwtjL79CwlUpH21hDAaM1orzq0IxSLtpfBOVtEbrnJxOjBve7pa6SEycY08gVFcPzo9QNQzxg7o3y2EoUVCDJ1Syko8ZAv0";
+        const igAccountId = "17841406986135986";
 
         // Fetch feed using the modern Instagram Graph API (v20.0)
         // With a Long-Lived Page Access Token, token refresh is no longer necessary!
