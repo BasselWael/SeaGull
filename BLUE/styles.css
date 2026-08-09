@@ -2650,4 +2650,63 @@ html[lang="ar"] .nav-links a {
     font-size: 1.1rem;
 }
 
+/* Beautiful Quote Section Styles */
+.beautiful-quote-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-note-box {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid rgba(0, 75, 135, 0.2);
+    background-color: var(--color-bg-alt);
+    margin-bottom: var(--spacing-xl);
+}
+
+.menu-note-box p {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.beautiful-quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beautiful-quote-icon {
+    margin-bottom: 20px;
+}
+
+.beautiful-quote-text {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 3rem;
+    color: var(--color-text-dark);
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.beautiful-quote-author {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
 

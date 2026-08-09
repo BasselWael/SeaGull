@@ -3154,6 +3154,7 @@ const DEFAULT_MENU_DATA = {
             "ar": "ميكس سي فود بصوص البارميزان مع الأرز الأبيض."
           },
           "price": 250
+        },
         {
           "en": "Truffle Risotto",
           "ar": "روزيتو ترافل",
@@ -3474,7 +3475,7 @@ const DEFAULT_MENU_DATA = {
 };
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
   projectId: "seagull-menu-db-35",
