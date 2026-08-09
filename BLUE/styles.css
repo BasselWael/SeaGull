@@ -353,7 +353,7 @@ button {
     margin-bottom: 1.5rem;
     font-weight: 500;
     font-size: 16px;
-    color: #2F3E46; /* Slightly lighter/softer teal if needed, or stick to dark */
+    color: #002D55; /* Slightly lighter/softer blue if needed, or stick to dark */
 }
 
 .dropcap {
@@ -818,7 +818,7 @@ button {
 .map-sea {
     position: absolute;
     top: 0; left: 0; right: 0; height: 32%;
-    background-color: #9bc4cb;
+    background-color: #6A9BD1;
 }
 .map-land {
     position: absolute;
@@ -1696,7 +1696,7 @@ button {
 }
 
 .review-card {
-    background-color: #152a2a;
+    background-color: #002D55;
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     width: 400px;
