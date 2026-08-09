@@ -1,0 +1,12 @@
+{"users": [
+{
+  "localId": "2I7PhWxmGgMMEvgwL5T07AMOyao2",
+  "email": "admin@seagull.com",
+  "emailVerified": false,
+  "passwordHash": "lvDhSTgzJ5u5G2kxrazO5sNMbn9u5rl+GowMmDWVUScfFGvTZHoeSTWEwTLfB1zDTKMmsVpSWKjq3DXUIy7wxA==",
+  "salt": "lLv3PjXoyRdmNw==",
+  "lastSignedInAt": "1786273874671",
+  "createdAt": "1785288129005",
+  "disabled": false,
+  "providerUserInfo": []
+}]}

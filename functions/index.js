@@ -34,3 +34,4 @@ exports.syncInstagramFeed = onSchedule("every 6 hours", async (event) => {
         console.error("Exception during Instagram sync:", error);
     }
 });
+
