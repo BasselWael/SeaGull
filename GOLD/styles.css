@@ -2709,4 +2709,10 @@ html[lang="ar"] .nav-links a {
     font-weight: 600;
 }
 
+/* Global fix for Arabic text: Prevent letter-spacing from breaking cursive connections */
+html[lang="ar"] *,
+.ar {
+    letter-spacing: normal !important;
+}
+
 
