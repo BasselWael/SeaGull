@@ -2,26 +2,26 @@
    CSS Variables & Base Setup
    ========================================================================== */
 :root {
-    --ink: #0f2a2e;
-    --ink-soft: #1d3d42;
+    --ink: #001F3F;
+    --ink-soft: #002D55;
     --cream: #f4ece0;
     --cream-deep: #ece1cf;
     --brass: #b08744;
     --brass-light: #d4a55a;
     --coral: #c45a3a;
     --foam: #e8e0ce;
-    --shadow: rgba(15, 42, 46, 0.08);
+    --shadow: rgba(0, 31, 63, 0.08);
     
     --f-display: "Fraunces", "Times New Roman", serif;
     --f-body: "Manrope", -apple-system, sans-serif;
     --f-ar-display: "Amiri", serif;
     --f-ar-body: "Noto Kufi Arabic", sans-serif;
 
-    --color-bg-dark: #17353A; /* Matches PDF dark teal */
+    --color-bg-dark: #002D55; /* Blue */
     --color-bg-light: #F2EADE; /* Warmer Cream */
-    --color-bg-alt: #F2EADE; /* Also update alt to match if not specifically different */
+    --color-bg-alt: #F2EADE; /* Warmer Cream */
     --color-accent: #B08744; /* Gold/Bronze */
-    --color-text-dark: #17353A; /* Matches PDF dark teal */
+    --color-text-dark: #001F3F; /* Blue */
     --color-text-light: #EBE5D9;
     --color-text-muted: rgba(235, 229, 217, 0.7);
     --color-border-light: rgba(17, 17, 17, 0.1);
@@ -353,7 +353,7 @@ button {
     margin-bottom: 1.5rem;
     font-weight: 500;
     font-size: 16px;
-    color: #2F3E46; /* Slightly lighter/softer teal if needed, or stick to dark */
+    color: #002D55; /* Slightly lighter/softer blue if needed, or stick to dark */
 }
 
 .dropcap {
@@ -795,7 +795,7 @@ button {
 
 .dot-round { background-color: #c9b189; }
 .dot-seasonal { border: 2px solid #d32f2f; background-color: transparent; }
-.dot-hotel { background-color: #1c2e36; }
+.dot-hotel { background-color: #002D55; }
 
 .loc-box-body {
     display: flex;
@@ -818,7 +818,7 @@ button {
 .map-sea {
     position: absolute;
     top: 0; left: 0; right: 0; height: 32%;
-    background-color: #9bc4cb;
+    background-color: #6A9BD1;
 }
 .map-land {
     position: absolute;
@@ -907,7 +907,7 @@ button {
 
 .loc-card-side {
     width: 400px;
-    background-color: #1c2e36;
+    background-color: #002D55;
     color: #e9e3d3;
     padding: 3rem 2rem;
 }
@@ -1075,7 +1075,7 @@ button {
 
 .icon-talabat { background-color: #ff5a00; }
 .icon-whatsapp { background-color: #25d366; }
-.icon-call { background-color: #132626; }
+.icon-call { background-color: #001F3F; }
 
 .delivery-card-title {
     font-family: var(--font-serif);
@@ -1118,7 +1118,7 @@ button {
 
 .btn-call {
     padding: 0.8rem 1.5rem;
-    background-color: #132626;
+    background-color: #001F3F;
     color: white;
     border: none;
     font-size: 0.8rem;
@@ -1501,7 +1501,7 @@ button {
    Marina Experience Section
    ========================================================================== */
 .marina-exp-section {
-    background-color: #1c2e36;
+    background-color: #002D55;
     padding: var(--spacing-xl) 5%;
     color: #e9e3d3;
 }
@@ -1627,7 +1627,7 @@ button {
    Guest Reviews Section
    ========================================================================== */
 .reviews-section {
-    background-color: #132626;
+    background-color: #001F3F;
     padding: var(--spacing-xl) 0;
     color: #e9e3d3;
     overflow: hidden;
@@ -1696,7 +1696,7 @@ button {
 }
 
 .review-card {
-    background-color: #152a2a;
+    background-color: #002D55;
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.5rem;
     width: 400px;
@@ -1958,12 +1958,12 @@ html[lang="ar"] .review-card {
 .footer-cta-title {
     font-family: var(--font-serif);
     font-size: 3rem;
-    color: #132626; /* Dark teal */
+    color: #001F3F; /* Dark teal */
     margin-bottom: 1.5rem;
 }
 
 .footer-cta-desc {
-    color: #132626;
+    color: #001F3F;
     margin: 0 auto 3rem;
     max-width: 600px;
     font-size: 0.95rem;
@@ -1973,8 +1973,8 @@ html[lang="ar"] .review-card {
 .btn-outline-dark {
     padding: 0.8rem 1.5rem;
     background-color: transparent;
-    border: 1px solid #132626;
-    color: #132626;
+    border: 1px solid #001F3F;
+    color: #001F3F;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1984,12 +1984,12 @@ html[lang="ar"] .review-card {
 }
 
 .btn-outline-dark:hover {
-    background-color: #132626;
+    background-color: #001F3F;
     color: #f2eadc;
 }
 
 .main-footer {
-    background-color: #132626;
+    background-color: #001F3F;
 }
 
 .link-col h4 {
@@ -2275,7 +2275,7 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 {
 
   /* Placeholder gradients for Instagram tiles */
   .instagram-tile.placeholder-1 .instagram-tile-inner {
-    background: linear-gradient(135deg, #1d3d42 0%, #0f2a2e 100%);
+    background: linear-gradient(135deg, #002D55 0%, #001F3F 100%);
   }
   .instagram-tile.placeholder-2 .instagram-tile-inner {
     background: linear-gradient(135deg, #d4a55a 0%, #b08744 100%);
@@ -2287,10 +2287,10 @@ html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4 {
     background: linear-gradient(135deg, #c45a3a 0%, #b08744 100%);
   }
   .instagram-tile.placeholder-5 .instagram-tile-inner {
-    background: linear-gradient(135deg, #0f2a2e 0%, #1d3d42 100%);
+    background: linear-gradient(135deg, #001F3F 0%, #002D55 100%);
   }
   .instagram-tile.placeholder-6 .instagram-tile-inner {
-    background: linear-gradient(135deg, #b08744 0%, #0f2a2e 100%);
+    background: linear-gradient(135deg, #b08744 0%, #001F3F 100%);
   }
 
   .instagram-tile svg.decor {
