@@ -16,7 +16,7 @@ async function performInstagramSync() {
     const feedData = await response.json();
 
     if (feedData.data) {
-        const feed = feedData.data.filter(item => item.media_type === "IMAGE" || item.media_type === "CAROUSEL_ALBUM").slice(0, 6);
+        const feed = feedData.data.filter(item => item.media_type === "IMAGE" || item.media_type === "CAROUSEL_ALBUM" || item.media_type === "VIDEO").slice(0, 6);
         await db.collection("public").doc("instagram_feed").set({
             feed: feed,
             updatedAt: new Date()

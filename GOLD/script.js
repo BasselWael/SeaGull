@@ -815,9 +815,14 @@ I will send my CV to careers@seagull.eg.
       if (feedData && feedData.length > 0) {
         const grid = document.getElementById('instagram-grid');
         if (grid) {
-          grid.innerHTML = feedData.map(item => `
-            <a class="instagram-tile" href="${item.permalink}" rel="noopener" target="_blank" style="background-image: url('${item.media_url}'); background-size: cover; background-position: center;">
-              <div class="instagram-tile-overlay">
+          grid.innerHTML = feedData.map(item => {
+            const isVideo = item.media_type === 'VIDEO';
+            const bgStyle = isVideo ? '' : `background-image: url('${item.media_url}'); background-size: cover; background-position: center;`;
+            const videoTag = isVideo ? `<video src="${item.media_url}" autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;"></video>` : '';
+            return `
+            <a class="instagram-tile" href="${item.permalink}" rel="noopener" target="_blank" style="${bgStyle}">
+              ${videoTag}
+              <div class="instagram-tile-overlay" style="z-index: 1;">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="width:30px; height:30px;">
                   <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -825,7 +830,8 @@ I will send my CV to careers@seagull.eg.
                 </svg>
               </div>
             </a>
-          `).join('');
+            `;
+          }).join('');
         }
       }
     } catch (e) {
