@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-functions.js";
 import { getMenuData } from './menu-data.js';
 
 const firebaseConfig = {
@@ -15,6 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
+const functions = getFunctions(app);
 
 let editableData = {};
 
@@ -295,3 +297,23 @@ function escapeHtml(unsafe) {
          .replace(/"/g, "&quot;")
          .replace(/'/g, "&#039;");
 }
+
+// Instagram Force Sync Logic
+document.getElementById('sync-ig-btn').addEventListener('click', async () => {
+    const btn = document.getElementById('sync-ig-btn');
+    const originalText = btn.textContent;
+    btn.textContent = 'Syncing...';
+    btn.disabled = true;
+    
+    try {
+        const forceSyncInstagramFeed = httpsCallable(functions, 'forceSyncInstagramFeed');
+        const result = await forceSyncInstagramFeed();
+        showToast(result.data.message || 'Instagram feed updated successfully!');
+    } catch (error) {
+        console.error('Error syncing Instagram:', error);
+        showToast('Failed to sync Instagram feed: ' + error.message);
+    } finally {
+        btn.textContent = originalText;
+        btn.disabled = false;
+    }
+});
