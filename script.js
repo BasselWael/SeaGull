@@ -817,8 +817,10 @@ I will send my CV to careers@seagull.eg.
         if (grid) {
           grid.innerHTML = feedData.map(item => {
             const isVideo = item.media_type === 'VIDEO';
-            const bgStyle = isVideo ? '' : `background-image: url('${item.media_url}'); background-size: cover; background-position: center;`;
-            const videoTag = isVideo ? `<video src="${item.media_url}" autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;"></video>` : '';
+            const src = item.media_url;
+            const thumb = item.thumbnail_url || item.media_url;
+            const bgStyle = `background-image: url('${thumb}'); background-size: cover; background-position: center;`;
+            const videoTag = (isVideo && src) ? `<video src="${src}" autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;"></video>` : '';
             return `
             <a class="instagram-tile" href="${item.permalink}" rel="noopener" target="_blank" style="${bgStyle}">
               ${videoTag}
