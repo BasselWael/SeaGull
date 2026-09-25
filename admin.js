@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (e.key === 'Enter') checkAuth();
     });
     document.getElementById('save-btn').addEventListener('click', saveMenu);
+    document.getElementById('clear-prices-btn').addEventListener('click', clearAllPrices);
 
     
     // Check if user is already logged in
@@ -260,6 +261,18 @@ function syncDOMToData() {
             }
         }
     });
+}
+
+function clearAllPrices() {
+    if(!confirm("Are you sure you want to clear ALL prices across ALL branches?")) return;
+    for (const branch in editableData) {
+        for (const cat of editableData[branch]) {
+            for (const item of cat.items) {
+                item.price = 0;
+            }
+        }
+    }
+    renderMenu();
 }
 
 async function saveMenu() {
